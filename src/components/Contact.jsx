@@ -1,22 +1,24 @@
-import { Button, FormControl, FormLabel, GridItem, Heading, Input, SimpleGrid, Text, Textarea, VStack } from '@chakra-ui/react'
+import { Button, FormControl, FormLabel, GridItem, Heading, Input, SimpleGrid, Text, Textarea, useBreakpointValue, VStack } from '@chakra-ui/react'
 import React from 'react'
 
 
 function Contact() {
+  //hook para cambiar tamaño de input (responsive)
+   const colSpan = useBreakpointValue({base:2, sm:1})
   return (
     <VStack w="full" h="full" p={5} spacing={10} alignItems="flex-start">
       <VStack spacing={2} alignItems="flex-start">
         <Heading size="xl">Contact</Heading>
-        <Text>Lets talk</Text>
+        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</Text>
       </VStack>
       <SimpleGrid columns={2} columnGap={3} w="full">
-        <GridItem colSpan={1}>
+        <GridItem colSpan={colSpan}>
           <FormControl>
             <FormLabel>Name</FormLabel>
             <Input placeholder='Name'></Input>
           </FormControl>
         </GridItem>
-        <GridItem colSpan={1}>
+        <GridItem colSpan={colSpan}>
           <FormControl>
             <FormLabel>Email</FormLabel>
             <Input placeholder='email@mail.com'></Input>
