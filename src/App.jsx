@@ -4,6 +4,7 @@ import About from './components/About'
 import Tecnologies from './components/Tecnologies'
 import Work from './components/Work'
 import Contact from './components/Contact'
+import Footer from './components/Footer.jsx'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Tecnologies/>
       <Work/>
       <Contact/>
+      <Footer/>
     </div>
   )
 }

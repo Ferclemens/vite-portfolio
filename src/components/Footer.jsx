@@ -6,9 +6,8 @@ function Footer() {
   return (
     <div>
         <div>
-            <link href='#' rel="noopener noreferrer" target="_blank">github</link>
-            <link href='#' rel="noopener noreferrer" target="_blank"></link>
-            <link href='#' rel="noopener noreferrer" target="_blank"></link>
+            <a href='https://github.com/Ferclemens' rel="noopener noreferrer" target="_blank">gitHub</a>
+            <a href='https://www.linkedin.com/in/foclemens/' rel="noopener noreferrer" target="_blank">LinkedIn</a>
         </div>
     </div>
   )

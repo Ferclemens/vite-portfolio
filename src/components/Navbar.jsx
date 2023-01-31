@@ -1,20 +1,69 @@
-import React from 'react'
+import {
+  Box,
+  Flex,
+  HStack,
+  Link,
+  IconButton,
+  useDisclosure,
+  useColorModeValue,
+  Stack,
+} from '@chakra-ui/react';
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
-function Navbar() {
+const Links = ['About', 'Tecnologies', 'Work', 'Contact'];
+
+const NavLink = ({children}) => (
+  <Link
+    px={2}
+    py={1}
+    rounded={'md'}
+    _hover={{
+      textDecoration: 'none',
+      bg: useColorModeValue('gray.200', 'gray.700'),
+    }}
+    href={'#'}>
+    {children}
+  </Link>
+);
+
+export default function Simple() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
-    <div>
-        <div>
-            <img src='' alt='imagen'/>
-            <h3>Fernando Clemens - Web developer</h3>
-        </div>
-        <div>
-            <button>About</button>
-            <button>Tecnologies</button>
-            <button>Work</button>
-            <button>Contact</button>
-        </div>
-    </div>
-  )
-}
+    <>
+      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+          <IconButton
+            size={'md'}
+            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+            aria-label={'Open Menu'}
+            display={{ md: 'none' }}
+            onClick={isOpen ? onClose : onOpen}
+          />
+          <Box>Fernando O. Clemens - Desarrollador web</Box>
+          <HStack spacing={8} alignItems={'center'}>
+            <HStack
+              as={'nav'}
+              spacing={4}
+              display={{ base: 'none', md: 'flex' }}>
+              {Links.map((link) => (
+                <NavLink key={link}>{link}</NavLink>
+              ))}
+            </HStack>
+          </HStack>
+        </Flex>
+        {isOpen ? (
+          <Box pb={4} display={{ md: 'none' }}>
+            <Stack as={'nav'} spacing={4}>
+              {Links.map((link) => (
+                <NavLink key={link}>{link}</NavLink>
+              ))}
+            </Stack>
+          </Box>
+        ) : null}
+      </Box>
 
-export default Navbar
+      <Box p={4}>Main Content Here</Box>
+    </>
+  );
+}
