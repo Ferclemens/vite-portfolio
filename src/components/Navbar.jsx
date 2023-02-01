@@ -40,12 +40,12 @@ export default function Simple() {
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
           />
-          <Box>Fernando O. Clemens - Desarrollador web</Box>
           <HStack spacing={8} alignItems={'center'}>
             <HStack
               as={'nav'}
               spacing={4}
-              display={{ base: 'none', md: 'flex' }}>
+              display={{ base: 'none', md: 'flex' }}
+              >
               {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>
               ))}

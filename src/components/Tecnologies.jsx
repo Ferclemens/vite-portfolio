@@ -1,5 +1,6 @@
-import { Box, Flex, GridItem, Heading, Image, SimpleGrid, Text, VStack } from '@chakra-ui/react'
+import { Box, Flex, GridItem, Heading, HStack, Image, SimpleGrid, Stack, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
+import Carousel from './Carousel'
 
 function Tecnologies() {
 
@@ -63,20 +64,9 @@ function Tecnologies() {
     <VStack w="full" h="full" p={5} spacing={10} alignItems="flex-start">
       <Heading>Tecnologies</Heading>
       <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</Text>
-      <Flex flexWrap="wrap" gap={5} justifyContent="center">
-        {tecnologies.map((tecnologie) => {
-          const {src, alt} = tecnologie
-          return (
-            <Image
-              key={alt}
-              borderRadius='lg'
-              boxSize='120px'
-              src= {src}
-              alt={alt}
-            />
-          )})
-        }
-      </Flex>
+      <Stack justifyContent="center" alignItems="center">
+        <Carousel/>
+      </Stack>
     </VStack>
   )
 }
