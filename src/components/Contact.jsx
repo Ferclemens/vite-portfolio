@@ -1,4 +1,4 @@
-import { Button, FormControl, FormLabel, GridItem, Heading, Input, SimpleGrid, Text, Textarea, useBreakpointValue, VStack } from '@chakra-ui/react'
+import { Button, FormControl, FormLabel, GridItem, Heading, Input, SimpleGrid, Text, Textarea, useBreakpointValue, Stack } from '@chakra-ui/react'
 import React from 'react'
 
 
@@ -6,11 +6,11 @@ function Contact() {
   //hook para cambiar tamaño de input (responsive)
    const colSpan = useBreakpointValue({base:2, sm:1})
   return (
-    <VStack w="full" h="full" p={5} spacing={10} alignItems="flex-start">
-      <VStack spacing={2} alignItems="flex-start">
+    <Stack w="full" h="full" p={5} spacing={10} alignItems="flex-start">
+      <Stack spacing={2} alignItems="flex-start">
         <Heading size="xl">Contact</Heading>
         <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</Text>
-      </VStack>
+      </Stack>
       <SimpleGrid columns={2} columnGap={3} w="full">
         <GridItem colSpan={colSpan}>
           <FormControl>
@@ -40,7 +40,7 @@ function Contact() {
           <Button mt={5} size="lg" w="full">Send</Button>
         </GridItem>
       </SimpleGrid>
-    </VStack>
+    </Stack>
   )
 }
 
