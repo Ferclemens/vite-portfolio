@@ -1,61 +1,65 @@
-import { Box, Flex, GridItem, Heading, HStack, Image, SimpleGrid, Stack, Text, VStack } from '@chakra-ui/react'
+import { Box, Button, Flex, GridItem, Heading, HStack, Image, SimpleGrid, Stack, Text, VStack, Icon } from '@chakra-ui/react'
 import React from 'react'
-import Carousel from './Carousel'
+import { SiChakraui, SiHtml5, SiCss3, SiJavascript, SiGit, SiPython, SiReact, SiRedux, SiNodedotjs, SiExpress, SiMysql, SiFirebase, SiBootstrap, SiVisualstudiocode } from 'react-icons/si';
 
 function Tecnologies() {
 
   const tecnologies = [
     {
-      src:'https://bit.ly/dan-abramov',
-      alt:'HTML logo'
+      src: SiHtml5,
+      title:'HTML'
     },
     {
-      src:'https://bit.ly/dan-abramov',
-      alt:'CSS logo'
+      src: SiCss3,
+      title:'CSS'
     },
     {
-      src:'https://bit.ly/dan-abramov',
-      alt:'Javascript logo'
+      src: SiJavascript,
+      title:'Javascript'
     },
     {
-      src:'https://bit.ly/dan-abramov',
-      alt:'Git logo'
+      src: SiGit,
+      title:'Git'
     },
     {
-      src:'https://bit.ly/dan-abramov',
-      alt:'Python logo'
+      src: SiVisualstudiocode,
+      title:'Visual Studio'
     },
     {
-      src:'https://bit.ly/dan-abramov',
-      alt:'React logo'
+      src: SiPython,
+      title:'Python'
     },
     {
-      src:'https://bit.ly/dan-abramov',
-      alt:'Redux logo'
+      src: SiReact,
+      title:'React'
     },
     {
-      src:'https://bit.ly/dan-abramov',
-      alt:'Node.js logo'
+      src: SiRedux,
+      title:'Redux'
     },
     {
-      src:'https://bit.ly/dan-abramov',
-      alt:'Express logo'
+      src: SiNodedotjs,
+      title:'Node.js'
     },
     {
-      src:'https://bit.ly/dan-abramov',
-      alt:'SQL server logo'
+      src: SiExpress,
+      title:'Express'
     },
     {
-      src:'https://bit.ly/dan-abramov',
-      alt:'Firebase logo'
+      src: SiMysql,
+      title:'MySQL'
     },
     {
-      src:'https://bit.ly/dan-abramov',
-      alt:'Bootstrap logo'
+      src: SiFirebase,
+      title:'Firebase'
     },
     {
-      src:'https://bit.ly/dan-abramov',
-      alt:'Chakra logo'
+      src: SiBootstrap,
+      title:'Bootstrap'
+    },
+    {
+      src: SiChakraui,
+      title:'Chakra'
     }
 
   ]
@@ -64,9 +68,14 @@ function Tecnologies() {
     <VStack w="full" h="full" p={5} spacing={10} alignItems="flex-start">
       <Heading>Tecnologies</Heading>
       <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</Text>
-      <Stack justifyContent="center" alignItems="center">
-        <Carousel/>
-      </Stack>
+      <HStack justifyContent="center" alignItems="center" flexWrap="wrap" gap={5}>
+        {tecnologies.map((item) => {
+          const {src, title} = item
+          return (
+            <Button size="lg" leftIcon={<Icon as={src} />} key={title}>{title}</Button>
+          )
+        })}
+      </HStack>
     </VStack>
   )
 }

@@ -23,7 +23,7 @@ function Contact() {
           <GridItem colSpan={colSpan}>
             <FormControl>
               <FormLabel>Email</FormLabel>
-              <Input placeholder='email@mail.com'></Input>
+              <Input placeholder='example@mail.com' type="email" ></Input>
             </FormControl>
           </GridItem>
           <GridItem colSpan={2}>
