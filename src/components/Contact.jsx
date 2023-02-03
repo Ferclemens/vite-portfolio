@@ -14,30 +14,30 @@ function Contact() {
           <Heading size="xl">Contact</Heading>
           <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</Text>
         </Stack>
-        <form name='form' netlify>
+        <form name='contact-form' data-netlify="true">
           <SimpleGrid columns={2} columnGap={3} w="full">
             <GridItem colSpan={colSpan}>
               <FormControl isRequired>
                 <FormLabel>Name</FormLabel>
-                <Input name='name' id='name' type='text'></Input>
+                <input name='name' id='name' type='text'></input>
               </FormControl>
             </GridItem>
             <GridItem colSpan={colSpan}>
               <FormControl isRequired>
                 <FormLabel>Email</FormLabel>
-                <Input name='email' id='email' type="email"></Input>
+                <input name='email' id='email' type="email"></input>
               </FormControl>
             </GridItem>
             <GridItem colSpan={2}>
               <FormControl isRequired>
                 <FormLabel>Company</FormLabel>
-                <Input name='company' id='company' type='text'></Input>
+                <input name='company' id='company' type='text'></input>
               </FormControl>
             </GridItem>
             <GridItem colSpan={2}>
               <FormControl isRequired>
                 <FormLabel>Message</FormLabel>
-                <Textarea name='message' id='message' type='text'></Textarea>
+                <textarea name='message' id='message' type='text'></textarea>
               </FormControl>
             </GridItem>
             <GridItem colSpan={2}>
