@@ -1,11 +1,12 @@
-import { Button, FormControl, FormLabel, GridItem, Heading, Input, SimpleGrid, Text, Textarea, useBreakpointValue, Stack, useDisclosure, Alert, AlertIcon, AlertTitle, AlertDescription } from '@chakra-ui/react'
-import React from 'react'
+import { Button, FormControl, FormLabel, GridItem, Heading, Input, SimpleGrid, Text, Textarea, useBreakpointValue, Stack, useDisclosure, Alert, AlertIcon, AlertTitle, AlertDescription, FormErrorMessage, FormHelperText } from '@chakra-ui/react'
+import React, { useState } from 'react'
 
 
 function Contact() {
-  //hook para cambiar tamaño de input (responsive)
-   const colSpan = useBreakpointValue({base:2, sm:1})
-
+    
+  //hook para cambiar tamaño de input name & email (responsive)
+  const colSpan = useBreakpointValue({base:2, sm:1})
+  
   return (
     <>
       <Stack w="full" h="full" p={5} spacing={10} alignItems="flex-start">
@@ -13,35 +14,38 @@ function Contact() {
           <Heading size="xl">Contact</Heading>
           <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</Text>
         </Stack>
-        <SimpleGrid columns={2} columnGap={3} w="full">
-          <GridItem colSpan={colSpan}>
-            <FormControl>
-              <FormLabel>Name</FormLabel>
-              <Input placeholder='Name'></Input>
-            </FormControl>
-          </GridItem>
-          <GridItem colSpan={colSpan}>
-            <FormControl>
-              <FormLabel>Email</FormLabel>
-              <Input placeholder='example@mail.com' type="email" ></Input>
-            </FormControl>
-          </GridItem>
-          <GridItem colSpan={2}>
-            <FormControl>
-              <FormLabel>Company</FormLabel>
-              <Input placeholder='Company'></Input>
-            </FormControl>
-          </GridItem>
-          <GridItem colSpan={2}>
-            <FormControl>
-              <FormLabel>Message</FormLabel>
-              <Textarea placeholder='Message here'></Textarea>
-            </FormControl>
-          </GridItem>
-          <GridItem colSpan={2}>
-            <Button mt={5} size="lg" w="full">Send</Button>
-          </GridItem>
-        </SimpleGrid>
+        <form name='form' netlify>
+          <SimpleGrid columns={2} columnGap={3} w="full">
+            <GridItem colSpan={colSpan}>
+              <FormControl isRequired>
+                <FormLabel>Name</FormLabel>
+                <Input name='name' id='name' type='text'></Input>
+              </FormControl>
+            </GridItem>
+            <GridItem colSpan={colSpan}>
+              <FormControl isRequired>
+                <FormLabel>Email</FormLabel>
+                <Input name='email' id='email' type="email"></Input>
+              </FormControl>
+            </GridItem>
+            <GridItem colSpan={2}>
+              <FormControl isRequired>
+                <FormLabel>Company</FormLabel>
+                <Input name='company' id='company' type='text'></Input>
+              </FormControl>
+            </GridItem>
+            <GridItem colSpan={2}>
+              <FormControl isRequired>
+                <FormLabel>Message</FormLabel>
+                <Textarea name='message' id='message' type='text'></Textarea>
+              </FormControl>
+            </GridItem>
+            <GridItem colSpan={2}>
+              <Button mt={5} size="lg" w="full" type='submit'
+              >Send</Button>
+            </GridItem>
+          </SimpleGrid>
+        </form>
       </Stack>
     </>  
   )
