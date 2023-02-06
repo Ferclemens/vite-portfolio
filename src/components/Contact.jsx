@@ -14,7 +14,7 @@ function Contact() {
           <Heading size="xl">Contact</Heading>
           <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</Text>
         </Stack>
-        <form name='contact' method="POST" data-netlify="true">
+        <form method='post'>
           <input type="hidden" name="form-name" value="contact" />
           <SimpleGrid columns={2} columnGap={3} w="full">
             <GridItem colSpan={colSpan}>
