@@ -8,7 +8,7 @@ function Footer() {
     //Security -> rel="noopener noreferrer"
     //The newly open site (target="_blank") gains limited access to your page via the JavaScript window.opener object. This is a read/write object that any can manipulate. It has a property called window.opener.location that can be changed, causing the browser to go to a new URL instead of staying at your page. 
   return (
-    <Stack px={5} py={1} direction={['column', 'row']} alignItems="center" justifyContent="space-evenly">
+    <Stack px={5} py={1} mt={5} direction={['column', 'row']} alignItems="center" justifyContent="space-evenly" bg={'rgba(255, 255, 255, 0.6)'}>
       <Text fontSize="m" m={5}>Made with Chakra <Icon as={SiChakraui}/> <Icon as={AiFillHeart}/></Text>
       <Text>Fer Clemens - web developer</Text>
       <ButtonGroup spacing='10' p={3} variant='ghost'>

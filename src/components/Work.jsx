@@ -33,30 +33,33 @@ function Work() {
     },
   ]
   return (
-    <VStack w="full" h="full" p={5} spacing={10} alignItems="flex-start">
-      <Heading>Work</Heading>
-      <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</Text>
-      {workList.map((work) => {
-          const {title, src, alt, tools, github, deploy, desc} = work
-          return (
-            <VStack key={title} w="full" h="full" p={1} spacing={3} alignItems="flex-start">
-              <Card >
-                <CardHeader pb={1}>
-                  <Heading size="l" m={1}>{title}</Heading>
-                </CardHeader>
-                <CardBody>
-                  <Text>{desc}</Text>
-                </CardBody>
-                  <Stack alignItems="flex-end">
-                    <ButtonGroup spacing='3' p={3} variant='ghost'>
-                      <Button leftIcon={<Icon as={TfiGithub} />}><Link href={github} isExternal>Github</Link></Button>
-                      <Button leftIcon={<Icon as={TfiWorld} />}><Link href={deploy} isExternal>Deploy</Link></Button>
-                    </ButtonGroup>
-                  </Stack>
-              </Card>
-            </VStack>
-          )})
+    <VStack w="full" h="full" p={5} spacing={10} alignItems="center">
+      <Stack p={5} bg={'rgba(255, 255, 255, 0.6)'} borderRadius={5} boxShadow={'md'}>
+        <Heading>Work</Heading>
+        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</Text>
+        {workList.map((work) => {
+            const {title, src, alt, tools, github, deploy, desc} = work
+            return (
+              <VStack key={title} w="full" h="full" p={1} spacing={3} alignItems="flex-start">
+                <Card >
+                  <CardHeader pb={1}>
+                    <Heading size="l" m={1}>{title}</Heading>
+                  </CardHeader>
+                  <CardBody>
+                    <Text>{desc}</Text>
+                  </CardBody>
+                    <Stack alignItems="flex-end">
+                      <ButtonGroup spacing='3' p={3} variant='ghost'>
+                        <Button leftIcon={<Icon as={TfiGithub} />}><Link href={github} isExternal>Github</Link></Button>
+                        <Button leftIcon={<Icon as={TfiWorld} />}><Link href={deploy} isExternal>Deploy</Link></Button>
+                      </ButtonGroup>
+                    </Stack>
+                </Card>
+              </VStack>
+            )
+          })
         }
+      </Stack>
     </VStack>
   )
 }

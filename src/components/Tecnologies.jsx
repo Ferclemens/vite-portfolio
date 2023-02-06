@@ -7,87 +7,106 @@ function Tecnologies() {
   const tecnologies = [
     {
       src: SiHtml5,
-      title:'HTML'
+      title:'HTML',
+      color:'orange'
     },
     {
       src: SiCss3,
-      title:'CSS'
+      title:'CSS',
+      color:'facebook'
     },
     {
       src: SiJavascript,
-      title:'Javascript'
+      title:'Javascript',
+      color:'yellow'
     },
     {
       src: SiGit,
-      title:'Git'
+      title:'Git',
+      color:'red'
     },
     {
       src: SiVisualstudiocode,
-      title:'Visual Studio'
+      title:'Visual Studio',
+      color:'twitter'
     },
     {
       src: SiJava,
-      title:'java'
+      title:'java',
+      color:'blue'
     },
     {
       src: SiPython,
-      title:'Python'
+      title:'Python',
+      color:'green'
     },
     {
       src: SiDjango,
-      title:'Django'
+      title:'Django',
+      color:'teal'
     },
     {
       src: SiReact,
-      title:'React'
+      title:'React',
+      color:'facebook'
     },
     {
       src: SiRedux,
-      title:'Redux'
+      title:'Redux',
+      color:'purple'
     },
     {
       src: SiVite,
-      title:'Vite'
+      title:'Vite',
+      color:'pink'
     },
     {
       src: SiNodedotjs,
-      title:'Node.js'
+      title:'Node.js',
+      color:'green'
     },
     {
       src: SiExpress,
-      title:'Express'
+      title:'Express',
+      color:'gray'
     },
     {
       src: SiMysql,
-      title:'MySQL'
+      title:'MySQL',
+      color:'telegram'
     },
     {
       src: SiFirebase,
-      title:'Firebase'
+      title:'Firebase',
+      color:'yellow'
     },
     {
       src: SiBootstrap,
-      title:'Bootstrap'
+      title:'Bootstrap',
+      color:'purple'
     },
     {
       src: SiChakraui,
-      title:'Chakra'
+      title:'Chakra',
+      color:'teal'
     }
 
   ]
 
   return (
     <VStack w="full" h="full" p={5} spacing={10} alignItems="flex-start">
-      <Heading>Tecnologies</Heading>
-      <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</Text>
-      <HStack justifyContent="center" alignItems="center" flexWrap="wrap" gap={5}>
-        {tecnologies.map((item) => {
-          const {src, title} = item
-          return (
-            <Button size="lg" leftIcon={<Icon as={src} />} key={title}>{title}</Button>
-          )
-        })}
-      </HStack>
+      <Stack p={5} bg={'rgba(255, 255, 255, 0.6)'} borderRadius={5} boxShadow='md'>
+        <Heading>Tecnologies</Heading>
+        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</Text>
+        <HStack justifyContent="center" alignItems="center" flexWrap="wrap" gap={5}>
+          {tecnologies.map((item) => {
+            const {src, title, color} = item
+            return (
+              <Button size="lg" leftIcon={<Icon as={src} />} key={title} colorScheme={color} boxShadow={'md'}>{title}</Button>
+            )
+          })}
+        </HStack>
+      </Stack>
     </VStack>
   )
 }
