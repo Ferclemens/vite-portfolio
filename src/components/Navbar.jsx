@@ -7,23 +7,25 @@ import {
   useDisclosure,
   useColorModeValue,
   Stack,
+  Button,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
 const Links = ['About', 'Tecnologies', 'Work', 'Contact'];
 
 const NavLink = ({children}) => (
-  <Link
-    px={2}
-    py={1}
-    rounded={'md'}
-    _hover={{
-      textDecoration: 'none',
-      bg: useColorModeValue('gray.200', 'gray.700'),
-    }}
-    href={'#'}>
-    {children}
-  </Link>
+  <Button colorScheme={'yellow'} shadow={'md'}>
+    <Link
+      px={2}
+      py={1}
+      rounded={'md'}
+      _hover={{
+        border:'1px',
+      }}
+      href={'#'}>
+      {children}
+    </Link>
+  </Button>
 );
 
 export default function Simple() {
@@ -31,10 +33,12 @@ export default function Simple() {
 
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
-        <Flex h={16} alignItems={'center'} justifyContent={'flex-end'}>
+      <Box bg={'rgba(255, 255, 255, 0.6)'} px={4}>
+        <Flex h={16} px={4} alignItems={'center'} justifyContent={'flex-end'}>
           <IconButton
-            size={'md'}
+            size={'lg'}
+            backgroundColor={'teal.400'}
+            shadow={'md'}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={'Open Menu'}
             display={{ md: 'none' }}
