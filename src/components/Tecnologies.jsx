@@ -1,6 +1,6 @@
 import { Box, Button, Flex, GridItem, Heading, HStack, Image, SimpleGrid, Stack, Text, VStack, Icon } from '@chakra-ui/react'
 import React from 'react'
-import { SiChakraui, SiHtml5, SiCss3, SiJavascript, SiGit, SiPython, SiReact, SiRedux, SiNodedotjs, SiExpress, SiMysql, SiFirebase, SiBootstrap, SiVisualstudiocode } from 'react-icons/si';
+import { SiChakraui, SiHtml5, SiCss3, SiJavascript, SiGit, SiPython, SiReact, SiRedux, SiNodedotjs, SiExpress, SiMysql, SiFirebase, SiBootstrap, SiVisualstudiocode, SiDjango, SiJava, SiVite } from 'react-icons/si';
 
 function Tecnologies() {
 
@@ -26,8 +26,16 @@ function Tecnologies() {
       title:'Visual Studio'
     },
     {
+      src: SiJava,
+      title:'java'
+    },
+    {
       src: SiPython,
       title:'Python'
+    },
+    {
+      src: SiDjango,
+      title:'Django'
     },
     {
       src: SiReact,
@@ -36,6 +44,10 @@ function Tecnologies() {
     {
       src: SiRedux,
       title:'Redux'
+    },
+    {
+      src: SiVite,
+      title:'Vite'
     },
     {
       src: SiNodedotjs,
