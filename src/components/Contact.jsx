@@ -41,8 +41,8 @@ function Contact() {
               </FormControl>
             </GridItem>
             <GridItem colSpan={2}>
-              <Button mt={5} size="lg" w="full" type='submit'
-              >Send</Button>
+              <button mt={5} size="lg" w="full" type='submit'
+              >Send</button>
             </GridItem>
           </SimpleGrid>
         </form>
