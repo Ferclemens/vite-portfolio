@@ -19,25 +19,25 @@ function Contact() {
             <GridItem colSpan={colSpan}>
               <FormControl isRequired>
                 <FormLabel>Name</FormLabel>
-                <input name='name' id='name' type='text'></input>
+                <input name='name' id='name' type='text' value="contact-form"></input>
               </FormControl>
             </GridItem>
             <GridItem colSpan={colSpan}>
               <FormControl isRequired>
                 <FormLabel>Email</FormLabel>
-                <input name='email' id='email' type="email"></input>
+                <input name='email' id='email' type="email" value="contact-form"></input>
               </FormControl>
             </GridItem>
             <GridItem colSpan={2}>
               <FormControl isRequired>
                 <FormLabel>Company</FormLabel>
-                <input name='company' id='company' type='text'></input>
+                <input name='company' id='company' type='text' value="contact-form"></input>
               </FormControl>
             </GridItem>
             <GridItem colSpan={2}>
               <FormControl isRequired>
                 <FormLabel>Message</FormLabel>
-                <textarea name='message' id='message' type='text'></textarea>
+                <textarea name='message' id='message' type='text' value="contact-form"></textarea>
               </FormControl>
             </GridItem>
             <GridItem colSpan={2}>
