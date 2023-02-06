@@ -14,35 +14,35 @@ function Contact() {
           <Heading size="xl">Contact</Heading>
           <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</Text>
         </Stack>
-        <form name='contact-form' method="POST" data-netlify="true">
+        <form name='contact' method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
           <SimpleGrid columns={2} columnGap={3} w="full">
             <GridItem colSpan={colSpan}>
               <FormControl isRequired>
                 <FormLabel>Name</FormLabel>
-                <input name='name' id='name' type='text' value="contact-form"></input>
+                <input name='name' type='text'></input>
               </FormControl>
             </GridItem>
             <GridItem colSpan={colSpan}>
               <FormControl isRequired>
                 <FormLabel>Email</FormLabel>
-                <input name='email' id='email' type="email" value="contact-form"></input>
+                <input name='email' type='email'></input>
               </FormControl>
             </GridItem>
             <GridItem colSpan={2}>
               <FormControl isRequired>
                 <FormLabel>Company</FormLabel>
-                <input name='company' id='company' type='text' value="contact-form"></input>
+                <input name='company' type='text'></input>
               </FormControl>
             </GridItem>
             <GridItem colSpan={2}>
               <FormControl isRequired>
                 <FormLabel>Message</FormLabel>
-                <textarea name='message' id='message' type='text' value="contact-form"></textarea>
+                <textarea name='message'></textarea>
               </FormControl>
             </GridItem>
             <GridItem colSpan={2}>
-              <button mt={5} size="lg" w="full" type='submit'
-              >Send</button>
+              <button type='submit'>Send</button>
             </GridItem>
           </SimpleGrid>
         </form>
