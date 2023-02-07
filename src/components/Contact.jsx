@@ -9,7 +9,8 @@ function Contact() {
   const formPaddingX = useBreakpointValue({base:'0', sm:'15', lg:'200'})
   
   return (
-      <VStack h="full" p={5} mx={5} spacing={10} borderRadius={5} alignItems="flex-start" bg={'rgba(255, 255, 255, 0.6)'} boxShadow='md'>
+    <VStack h="100vh" justifyContent={'center'}  id='Contact'>
+      <VStack p={5} mx={5} mt={'20'} spacing={10} borderRadius={5} alignItems="flex-start" bg={'rgba(255, 255, 255, 0.6)'} boxShadow='md'>
           <Stack spacing={2} alignItems="flex-start">
             <Heading size="xl">Contact</Heading>
             <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</Text>
@@ -49,6 +50,7 @@ function Contact() {
             </form>
           </Stack>
       </VStack> 
+    </VStack>
   )
 }
 

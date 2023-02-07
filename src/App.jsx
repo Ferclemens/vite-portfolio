@@ -10,7 +10,7 @@ import Presentation from './components/Presentation'
 function App() {
 
   return (
-    <div className="page">
+    <div className='container'>
       <Navbar/>
       <Presentation/>        
       <About/>
