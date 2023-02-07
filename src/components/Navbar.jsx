@@ -11,29 +11,13 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
-const Links = ['About', 'Tecnologies', 'Work', 'Contact'];
-
-const NavLink = ({children}) => (
-  <Button colorScheme={'yellow'} shadow={'md'}>
-    <Link
-      px={2}
-      py={1}
-      rounded={'md'}
-      _hover={{
-        border:'1px',
-      }}
-      href={'#'}>
-      {children}
-    </Link>
-  </Button>
-);
+const Links = ['Home','About', 'Tecnologies', 'Work', 'Contact'];
 
 export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <>
-      <Box bg={'rgba(255, 255, 255, 0.6)'} px={4}>
+      <Box bg={'rgba(255, 255, 255, 0.4)'} px={4} position={'fixed'} w={'full'} zIndex={'1'} backdropFilter='auto' backdropBlur='8px'>
         <Flex h={16} px={4} alignItems={'center'} justifyContent={'flex-end'}>
           <IconButton
             size={'lg'}
@@ -51,7 +35,7 @@ export default function Simple() {
               display={{ base: 'none', md: 'flex' }}
               >
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <Link href={`#${link}`}><Button colorScheme={'yellow'} key={link}>{link}</Button></Link>
               ))}
             </HStack>
           </HStack>
@@ -60,12 +44,11 @@ export default function Simple() {
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <Link href={`#${link}`}><Button colorScheme={'yellow'} key={link}>{link}</Button></Link>
               ))}
             </Stack>
           </Box>
         ) : null}
       </Box>
-    </>
   );
 }

@@ -33,8 +33,8 @@ function Work() {
     },
   ]
   return (
-    <VStack w="full" h="full" p={5} spacing={10} alignItems="center">
-      <Stack p={5} bg={'rgba(255, 255, 255, 0.6)'} borderRadius={5} boxShadow={'md'}>
+    <VStack w="full" h="100vh" p={5} spacing={10} mb={'40'} alignItems="center" id='Work'>
+      <Stack p={5} mt={'20'} bg={'rgba(255, 255, 255, 0.6)'} borderRadius={5} boxShadow={'md'}>
         <Heading>Work</Heading>
         <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</Text>
         {workList.map((work) => {
