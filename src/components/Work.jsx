@@ -1,8 +1,9 @@
 import React from 'react'
-import { Heading, Text, VStack, Card, CardHeader, CardBody, CardFooter, Image, Drawer, useDisclosure, Button, DrawerOverlay, DrawerContent, DrawerHeader, DrawerBody, Link, ButtonGroup, Icon, Box, Flex, Spacer, Stack } from '@chakra-ui/react'
+import { Heading, Text, VStack, Card, CardHeader, CardBody, CardFooter, Image, Drawer, useDisclosure, Button, DrawerOverlay, DrawerContent, DrawerHeader, DrawerBody, Link, ButtonGroup, Icon, Box, Flex, Spacer, Stack, useBreakpointValue } from '@chakra-ui/react'
 import {TfiGithub, TfiWorld} from 'react-icons/tfi'
 
 function Work() {
+  const fontSizeDinamic = useBreakpointValue({base:'xl', sm:'4xl'})
   const workList = [
     {
       title:"Ecommerce App",
@@ -11,7 +12,7 @@ function Work() {
       tools:"#Javascript | #React | #Firebase",
       github:"https://github.com/Ferclemens/Context-EcommerceApp-SkillFactory",
       deploy:"https://ecommerce-app-skill-factory.vercel.app/",
-      desc:"Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+      desc:"Ecommerce of football shirts with responsive design, user and stock management, shopping cart and payment simulation."
     },
     {
       title:"CRUD - Backend Node.js",
@@ -33,14 +34,14 @@ function Work() {
     },
   ]
   return (
-    <VStack w="full" h="100vh" p={5} spacing={10} mb={'40'} alignItems="center" id='Work'>
-      <Stack p={5} mt={'20'} bg={'rgba(255, 255, 255, 0.6)'} borderRadius={5} boxShadow={'md'}>
+    <VStack p={5} py={'24'} spacing={10} alignItems="center" id='Work'>
+      <Stack p={5} bg={'rgba(255, 255, 255, 0.6)'} borderRadius={5} boxShadow={'md'}>
         <Heading>Work</Heading>
-        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</Text>
+        <Text fontSize={fontSizeDinamic}>Some projects I have worked on, applying what I have learned.</Text>
         {workList.map((work) => {
             const {title, src, alt, tools, github, deploy, desc} = work
             return (
-              <VStack key={title} w="full" h="full" p={1} spacing={3} alignItems="flex-start">
+              <VStack key={title} p={1} alignItems="flex-start">
                 <Card >
                   <CardHeader pb={1}>
                     <Heading size="l" m={1}>{title}</Heading>

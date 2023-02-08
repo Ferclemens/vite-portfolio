@@ -1,9 +1,11 @@
-import { Box, Button, Flex, GridItem, Heading, HStack, Image, SimpleGrid, Stack, Text, VStack, Icon } from '@chakra-ui/react'
+import { Box, Button, Flex, GridItem, Heading, HStack, Image, SimpleGrid, Stack, Text, VStack, Icon, useBreakpointValue } from '@chakra-ui/react'
 import React from 'react'
 import { SiChakraui, SiHtml5, SiCss3, SiJavascript, SiGit, SiPython, SiReact, SiRedux, SiNodedotjs, SiExpress, SiMysql, SiFirebase, SiBootstrap, SiVisualstudiocode, SiDjango, SiJava, SiVite } from 'react-icons/si';
 
 function Tecnologies() {
-
+  const fontSizeDinamic = useBreakpointValue({base:'xl', sm:'4xl'})
+  const paddingDinamic = useBreakpointValue({base:'5', sm:'16'})
+  const gapDinamic = useBreakpointValue({base:'5', sm:'8'})
   const tecnologies = [
     {
       src: SiHtml5,
@@ -94,11 +96,11 @@ function Tecnologies() {
   ]
 
   return (
-    <VStack w="full" h="100vh" p={5} spacing={10} alignItems="flex-start" id='Tecnologies'>
+    <VStack p={5} spacing={10} alignItems="flex-start" id='Tecnologies'>
       <Stack p={5} mt={'20'} bg={'rgba(255, 255, 255, 0.6)'} borderRadius={5} boxShadow='md'>
-        <Heading>Tecnologies</Heading>
-        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</Text>
-        <HStack justifyContent="center" alignItems="center" flexWrap="wrap" gap={5}>
+        <Heading as={'h2'}>Tecnologies</Heading>
+        <Text fontSize={fontSizeDinamic}>languages, libraries, frameworks and tools that I use so far.</Text>
+        <HStack justifyContent="center" alignItems="center" flexWrap="wrap" gap={gapDinamic} p={paddingDinamic}>
           {tecnologies.map((item) => {
             const {src, title, color} = item
             return (

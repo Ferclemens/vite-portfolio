@@ -8,10 +8,15 @@ import {
   useColorModeValue,
   Stack,
   Button,
+  Icon,
+  ButtonGroup,
+  Text,
+  Spacer
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import {BsGithub, BsLinkedin, BsMailbox} from 'react-icons/bs'
 
-const Links = ['Home','About', 'Tecnologies', 'Work', 'Contact'];
+const Links = ['Up','About', 'Tecnologies', 'Work', 'Contact'];
 
 export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -19,6 +24,12 @@ export default function Simple() {
   return (
       <Box bg={'rgba(255, 255, 255, 0.4)'} px={4} position={'fixed'} w={'full'} zIndex={'1'} backdropFilter='auto' backdropBlur='8px'>
         <Flex h={16} px={4} alignItems={'center'} justifyContent={'flex-end'}>
+        <ButtonGroup spacing='3' p={3} variant='ghost' justifyContent={'flex-start'}>
+          <Link href='https://github.com/Ferclemens' isExternal><Icon as={BsGithub} /></Link>
+          <Link href='https://www.linkedin.com/in/foclemens/' isExternal><Icon as={BsLinkedin} /></Link>
+          <Text>foclemens@gmail.com</Text>
+        </ButtonGroup>
+        <Spacer/>
           <IconButton
             size={'lg'}
             backgroundColor={'teal.400'}
