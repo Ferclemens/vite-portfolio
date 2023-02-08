@@ -3,8 +3,8 @@ import React from 'react'
 import { SiChakraui, SiHtml5, SiCss3, SiJavascript, SiGit, SiPython, SiReact, SiRedux, SiNodedotjs, SiExpress, SiMysql, SiFirebase, SiBootstrap, SiVisualstudiocode, SiDjango, SiJava, SiVite } from 'react-icons/si';
 
 function Tecnologies() {
-  const fontSizeDinamic = useBreakpointValue({base:'xl', sm:'4xl'})
-  const paddingDinamic = useBreakpointValue({base:'5', sm:'16'})
+  const fontSizeDinamic = useBreakpointValue({base:'xl', sm:'2xl'})
+  const paddingDinamic = useBreakpointValue({base:'5', sm:'10'})
   const gapDinamic = useBreakpointValue({base:'5', sm:'8'})
   const tecnologies = [
     {
