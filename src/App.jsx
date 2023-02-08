@@ -6,11 +6,12 @@ import Work from './components/Work'
 import Contact from './components/Contact'
 import Footer from './components/Footer.jsx'
 import Presentation from './components/Presentation'
+import { VStack } from '@chakra-ui/react'
 
 function App() {
 
   return (
-    <div className='container'>
+    <VStack>
       <Navbar/>
       <Presentation/>        
       <About/>
@@ -18,7 +19,7 @@ function App() {
       <Work/>
       <Contact/>
       <Footer/>
-    </div>
+    </VStack>
   )
 }
 
