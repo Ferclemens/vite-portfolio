@@ -13,17 +13,24 @@
       <input type='text' name='company'/>
       <textarea name="message"></textarea>
     </form>
-    <div class="container" id="root"></div>
-    <div class="background--custom--deg">
+    <div id="root"></div>
+    <div class="background--custom--top">
       <canvas id="canvas"></canvas>
     </div>
-    <svg class="background--custom--lines" id="demo" viewBox="0 0 100 100" preserveAspectRatio="none">
-      <path fill="#FFFF00" fill-opacity="0.7" d="M-100 -100L200 -100L200 50L-100 50Z" style="animation: path0 25s linear infinite alternate;" /><path fill="#00FFFF" fill-opacity="0.7" d="M-100 -100L200 -100L200 50L-100 50Z" style="animation: path1 50s linear infinite alternate;" /><path fill="#FF00FF" fill-opacity="0.2" d="M-100 -100L200 -100L200 20L-100 20Z" style="animation: path2 50s linear infinite alternate;" />
-    </svg>
+    <div class="background--custom--bottom">
+      <canvas id="canvas2"></canvas>
+    </div>
+    <div class="background--custom--bottom2">
+      <canvas id="canvas3"></canvas>
+    </div>
     <script src="https://cdn.jsdelivr.net/gh/greentfrapp/pocoloco@minigl/minigl.js"></script>
     <script>
-      var gradient = new Gradient();
+      let gradient = new Gradient();
       gradient.initGradient("#canvas");
+      let gradient2 = new Gradient();
+      gradient2.initGradient("#canvas2");
+      let gradient3 = new Gradient();
+      gradient3.initGradient("#canvas3");
     </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
