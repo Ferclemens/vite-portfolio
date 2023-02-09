@@ -22,16 +22,16 @@ export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-      <Box bg={'rgba(255, 255, 255, 0.4)'} px={4} position={'fixed'} w={'full'} zIndex={'1'} backdropFilter='auto' backdropBlur='8px'>
+      <Box bg={'rgba(255, 255, 255, 0.4)'} px={4} position={'fixed'} w={'100vw'} zIndex={'1'} backdropFilter='auto' backdropBlur='8px'>
         <Flex h={16} px={4} alignItems={'center'} justifyContent={'flex-end'}>
-        <ButtonGroup spacing='3' p={3} variant='ghost' justifyContent={'flex-start'}>
+        <ButtonGroup spacing={'3'} p={'3'} variant='ghost' justifyContent={'flex-start'}>
           <Link href='https://github.com/Ferclemens' isExternal><Icon as={BsGithub} /></Link>
           <Link href='https://www.linkedin.com/in/foclemens/' isExternal><Icon as={BsLinkedin} /></Link>
           <Text>foclemens@gmail.com</Text>
         </ButtonGroup>
         <Spacer/>
           <IconButton
-            size={'lg'}
+            size={'sm'}
             backgroundColor={'teal.400'}
             shadow={'md'}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
