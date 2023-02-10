@@ -115,7 +115,7 @@ function Tecnologies() {
     <VStack p={5} spacing={10} alignItems="flex-start" id='Tecnologies'>
       <Stack p={5} mt={'20'} bg={'rgba(255, 255, 255, 0.6)'} borderRadius={5} boxShadow={'dark-lg'}>
         <Heading as={'h2'}>Tecnologies</Heading>
-        <Text fontSize={fontSizeDinamic}>languages, libraries, frameworks and tools that I use so far.</Text>
+        <Text fontSize={fontSizeDinamic}>Languages, libraries, frameworks and tools that I use so far.</Text>
         <HStack justifyContent="center" alignItems="center" flexWrap="wrap" gap={gapDinamic} p={paddingDinamic}>
           {tecnologies.map((item) => {
             const {src, title, color, link} = item
