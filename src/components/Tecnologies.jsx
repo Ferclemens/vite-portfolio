@@ -1,4 +1,4 @@
-import { Box, Button, Flex, GridItem, Heading, HStack, Image, SimpleGrid, Stack, Text, VStack, Icon, useBreakpointValue } from '@chakra-ui/react'
+import { Box, Button, Flex, GridItem, Heading, HStack, Image, SimpleGrid, Stack, Text, VStack, Icon, useBreakpointValue, Link } from '@chakra-ui/react'
 import React from 'react'
 import { SiChakraui, SiHtml5, SiCss3, SiJavascript, SiGit, SiPython, SiReact, SiRedux, SiNodedotjs, SiExpress, SiMysql, SiFirebase, SiBootstrap, SiVisualstudiocode, SiDjango, SiJava, SiVite } from 'react-icons/si';
 
@@ -10,101 +10,117 @@ function Tecnologies() {
     {
       src: SiHtml5,
       title:'HTML',
-      color:'orange'
+      color:'orange',
+      link:'https://developer.mozilla.org/es/docs/Web/HTML'
     },
     {
       src: SiCss3,
       title:'CSS',
-      color:'facebook'
+      color:'facebook',
+      link:'https://developer.mozilla.org/es/docs/Web/CSS'
     },
     {
       src: SiJavascript,
       title:'Javascript',
-      color:'yellow'
+      color:'yellow',
+      link:'https://developer.mozilla.org/es/docs/Web/JavaScript'
     },
     {
       src: SiGit,
       title:'Git',
-      color:'red'
+      color:'red',
+      link:'https://git-scm.com/'
     },
     {
       src: SiVisualstudiocode,
       title:'Visual Studio',
-      color:'twitter'
+      color:'twitter',
+      link:'https://code.visualstudio.com/'
     },
     {
       src: SiJava,
       title:'java',
-      color:'blue'
+      color:'blue',
+      link:'https://www.oracle.com/ar/java/'
     },
     {
       src: SiPython,
       title:'Python',
-      color:'green'
+      color:'green',
+      link:'https://www.python.org/'
     },
     {
       src: SiDjango,
       title:'Django',
-      color:'teal'
+      color:'teal',
+      link:'https://www.djangoproject.com/'
     },
     {
       src: SiReact,
       title:'React',
-      color:'facebook'
+      color:'facebook',
+      link:'https://beta.es.reactjs.org/'
     },
     {
       src: SiRedux,
       title:'Redux',
-      color:'purple'
+      color:'purple',
+      link:'https://es.redux.js.org/'
     },
     {
       src: SiVite,
       title:'Vite',
-      color:'pink'
+      color:'pink',
+      link:'https://vitejs.dev/'
     },
     {
       src: SiNodedotjs,
       title:'Node.js',
-      color:'green'
+      color:'green',
+      link:'https://nodejs.org/es/'
     },
     {
       src: SiExpress,
       title:'Express',
-      color:'gray'
+      color:'gray',
+      link:'https://expressjs.com/'
     },
     {
       src: SiMysql,
       title:'MySQL',
-      color:'telegram'
+      color:'telegram',
+      link:'https://www.mysql.com/'
     },
     {
       src: SiFirebase,
       title:'Firebase',
-      color:'yellow'
+      color:'yellow',
+      link:'https://firebase.google.com/?hl=es'
     },
     {
       src: SiBootstrap,
       title:'Bootstrap',
-      color:'purple'
+      color:'purple',
+      link:'https://getbootstrap.com/'
     },
     {
       src: SiChakraui,
       title:'Chakra',
-      color:'teal'
+      color:'teal',
+      link:'https://chakra-ui.com/'
     }
-
   ]
 
   return (
     <VStack p={5} spacing={10} alignItems="flex-start" id='Tecnologies'>
-      <Stack p={5} mt={'20'} bg={'rgba(255, 255, 255, 0.6)'} borderRadius={5} boxShadow='md'>
+      <Stack p={5} mt={'20'} bg={'rgba(255, 255, 255, 0.6)'} borderRadius={5} boxShadow={'dark-lg'}>
         <Heading as={'h2'}>Tecnologies</Heading>
         <Text fontSize={fontSizeDinamic}>languages, libraries, frameworks and tools that I use so far.</Text>
         <HStack justifyContent="center" alignItems="center" flexWrap="wrap" gap={gapDinamic} p={paddingDinamic}>
           {tecnologies.map((item) => {
-            const {src, title, color} = item
+            const {src, title, color, link} = item
             return (
-              <Button size="lg" leftIcon={<Icon as={src} />} key={title} colorScheme={color} boxShadow={'md'}>{title}</Button>
+              <Button size="lg" leftIcon={<Icon as={src} />} key={title} colorScheme={color} boxShadow={'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;'}><Link href={link} isExternal>{title}</Link></Button>
             )
           })}
         </HStack>

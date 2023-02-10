@@ -23,13 +23,13 @@ function Contact() {
 
   return (
     <VStack id='Contact' py={'24'} px={'5'}>
-      <VStack p={5} spacing={10} borderRadius={5} alignItems="flex-start" bg={'rgba(255, 255, 255, 0.6)'} boxShadow='md'>
+      <VStack p={5} spacing={10} borderRadius={5} alignItems="flex-start" bg={'rgba(255, 255, 255, 0.6)'} boxShadow={'dark-lg'}>
           <Stack spacing={2} alignItems="flex-start">
             <Heading size="xl">Contact</Heading>
             <Text fontSize={fontSizeDinamic}>Write me to organize a meeting, any suggestions or just talk. 💬</Text>
           </Stack>
           <Stack w={'full'} px={formPaddingX}>
-            <form method='post'>
+            <form method='post' action="/components/Error404.jsx">
               <input type="hidden" name="form-name" value="contact" />
               <SimpleGrid columns={2} columnGap={3} w="full" >
                 <GridItem colSpan={colSpan}>
@@ -60,7 +60,7 @@ function Contact() {
                   </FormControl>
                 </GridItem>
                 <GridItem colSpan={2}>
-                  <Button my={10} w={'full'} colorScheme={'yellow'} border={'1px'} type='submit'>Send</Button>
+                  <Button my={10} w={'full'} colorScheme={'yellow'} border={'1px'} boxShadow={'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;'} type='submit'>Send</Button>
                 </GridItem>
               </SimpleGrid>
             </form>

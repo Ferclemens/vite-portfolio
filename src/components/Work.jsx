@@ -4,7 +4,7 @@ import {TfiGithub, TfiWorld} from 'react-icons/tfi'
 import { SiChakraui, SiHtml5, SiCss3, SiJavascript, SiGit, SiPython, SiReact, SiRedux, SiNodedotjs, SiExpress, SiMysql, SiFirebase, SiBootstrap, SiVisualstudiocode, SiDjango, SiJava, SiVite } from 'react-icons/si';
 
 function Work() {
-  const fontSizeDinamic = useBreakpointValue({base:'xl', sm:'2xl'})
+  const fontSizeDinamic = useBreakpointValue({base:'xl', sm:'2xl', lg:'2xl'})
   const workList = [
     {
       title:"Ecommerce App",
@@ -131,23 +131,24 @@ function Work() {
   ]
   return (
     <VStack p={5} py={'24'} spacing={10} alignItems="center" id='Work'>
-      <Stack p={5} bg={'rgba(255, 255, 255, 0.6)'} borderRadius={5} boxShadow={'md'}>
+      <Stack p={5} bg={'rgba(255, 255, 255, 0.6)'} borderRadius={5} boxShadow={'dark-lg'}>
         <Heading>Work</Heading>
         <Text fontSize={fontSizeDinamic}>Some projects I have worked on, applying what I have learned.</Text>
         {workList.map((work) => {
             const {title, src, alt, tools, github, deploy, desc, toolsIcons} = work
             return (
-              <VStack key={title} py={3} alignItems="flex-start">
-                <Card bgGradient={'linear(to-r, teal.300, green.400)'}>
+              <VStack key={title} py={3} alignItems={'flex-start'}>
+                <Card bgGradient={'linear(to-r, teal.400, green.400)'} boxShadow={'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;'}>
                   <CardHeader pb={1}>
-                    <Heading size="l" m={1}>{title}</Heading>
+                    <Heading fontSize={'2xl'} m={1}>{title}</Heading>
                   </CardHeader>
                   <CardBody>
-                    <Text mb={2}>{desc}</Text>
+                    <Text mb={2} fontSize={'xl'}>{desc}</Text>
                     <ButtonGroup py={2} flexWrap={'wrap'}>
                       {
                         toolsIcons.map((tool) =>{
                           const {id, name, icon} = tool
+                          //no entiendo porque el error de key prop, si tienen id :/
                           return (
                             <HStack key={id}>
                               <Icon as={icon}></Icon>

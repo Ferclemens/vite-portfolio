@@ -46,7 +46,7 @@ export default function Simple() {
               display={{ base: 'none', md: 'flex' }}
               >
               {Links.map((link) => (
-                <Link href={`#${link}`}><Button colorScheme={'yellow'} key={link}>{link}</Button></Link>
+                <Link href={`#${link}`}><Button colorScheme={'yellow'} key={link} boxShadow={'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;'}>{link}</Button></Link>
               ))}
             </HStack>
           </HStack>
@@ -55,7 +55,7 @@ export default function Simple() {
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
               {Links.map((link) => (
-                <Link href={`#${link}`}><Button colorScheme={'yellow'} key={link}>{link}</Button></Link>
+                <Link href={`#${link}`}><Button colorScheme={'yellow'} key={link} boxShadow={'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;'}>{link}</Button></Link>
               ))}
             </Stack>
           </Box>

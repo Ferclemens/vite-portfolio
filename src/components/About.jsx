@@ -8,7 +8,7 @@ function About() {
   const marginXDinamic = useBreakpointValue({base:'5', sm:'22', lg:'52'})
   return (
     <VStack p={5} alignItems="flex-start" id='About'>
-      <Stack mb={'32'} mx={marginXDinamic} p={5} mt={marginTopDinamic} bg={'rgba(255, 255, 255, 0.6)'} borderRadius={5} boxShadow='md'>
+      <Stack mb={'32'} mx={marginXDinamic} p={5} mt={marginTopDinamic} bg={'rgba(255, 255, 255, 0.6)'} borderRadius={5} boxShadow={'dark-lg'}>
         <Heading>About</Heading>
         <Text fontSize={fontSizeDinamic} lineHeight={lineHeightDinamic}>My name is Fernando, I am a front end web developer. Currently carrying out projects with back end tools for managing Sql and NoSql databases. Curious, empathetic and proactive. With experience working in groups, project management, repositories and eager to learn. Looking for my first job in the technology sector. 💻 💪</Text>
       </Stack>
