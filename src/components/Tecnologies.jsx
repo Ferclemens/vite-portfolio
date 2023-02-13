@@ -38,24 +38,6 @@ function Tecnologies() {
       link:'https://code.visualstudio.com/'
     },
     {
-      src: SiJava,
-      title:'java',
-      color:'blue',
-      link:'https://www.oracle.com/ar/java/'
-    },
-    {
-      src: SiPython,
-      title:'Python',
-      color:'green',
-      link:'https://www.python.org/'
-    },
-    {
-      src: SiDjango,
-      title:'Django',
-      color:'teal',
-      link:'https://www.djangoproject.com/'
-    },
-    {
       src: SiReact,
       title:'React',
       color:'facebook',
