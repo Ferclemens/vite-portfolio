@@ -15,7 +15,7 @@ canvas#canvas {
   position: absolute;
   width: 100%;
   height: 55%;
-  transform: rotate(-44deg) scale(3) translateY(-55%) translateX(20%);
+  transform: rotate(-41deg) scale(3) translateY(-55%) translateX(20%);
   --gradient-color-1: #e8ea37; 
   --gradient-color-2: #e2c732; 
   --gradient-color-3: #67f7a7;  
@@ -25,35 +25,49 @@ canvas#canvas {
 #triangle1 {
   position: absolute;
   bottom: 0;
-  transform: rotate(-122deg) scale(1.2) translateX(26%) translateY(-20%);
-  width: 600px;
+  transform: rotate(-135deg) scale(1.2) translateX(32%) translateY(34%);
+  width: 500px;
   height: 750px;
-  background: rgb(210,136,29);
-  background: linear-gradient(62deg, rgba(210,136,29,1) 17%, rgba(205,82,33,1) 37%, rgba(198,82,59,1) 54%, rgba(111,128,64,1) 70%, rgba(38,176,193,1) 87%);  
-  box-shadow: rgba(240, 137, 46, 0.4) -5px 5px, rgba(240, 127, 46, 0.3) -10px 10px, rgba(240, 127, 46, 0.2) -15px 15px, rgba(240, 146, 46, 0.1) -20px 20px, rgba(240, 117, 46, 0.05) -25px 25px;
-    border-radius: 1px; 
+  filter: brightness(0.8);
+  background: rgb(226,199,50);
+  background: linear-gradient(160deg, rgba(226,199,50,1) 0%, rgba(103,247,167,1) 50%, rgba(57,190,208,1) 82%);   
+  box-shadow: rgba(57, 190, 208, 0.4) 5px 5px, rgba(57, 190, 208, 0.3) 10px 10px, rgba(57, 190, 208, 0.2) 15px 15px, rgba(57, 190, 208, 0.1) 20px 20px, rgba(57, 190, 208, 0.05) 25px 25px, rgba(103,247,167, 0.4) -5px -5px, rgba(103,247,167, 0.3) -10px -10px, rgba(103,247,167, 0.2) -15px -15px, rgba(103,247,167, 0.1) -20px -20px, rgba(103,247,167, 0.05) -25px -25px;
+  border-radius: 1px; 
 }
 #triangle2 {
   position: absolute;
   bottom: 0;
   right: 0;
-  transform: rotate(-136deg) scale(1.6) translateX(-40%) translateY(6%);
+  transform: rotate(-135deg) scale(1.6) translateX(-35%) translateY(3%);
   width: 800px;
   height: 750px;
-  background: rgb(210,136,29);
-  background: linear-gradient(62deg, rgba(210,136,29,1) 17%, rgba(205,82,33,1) 37%, rgba(198,82,59,1) 54%, rgba(111,128,64,1) 70%, rgba(38,176,193,1) 87%);  
-  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px, rgba(240, 46, 170, 0.4) -5px -5px, rgba(240, 46, 170, 0.3) -10px -10px, rgba(240, 46, 170, 0.2) -15px -15px, rgba(240, 46, 170, 0.1) -20px -20px, rgba(240, 46, 170, 0.05) -25px -25px;
+  filter: brightness(0.8);
+  background: rgb(105,9,200);
+  background: linear-gradient(133deg, rgba(105,9,200,1) 0%, rgba(38,193,160,1) 45%, rgba(57,116,208,1) 82%); 
+  box-shadow: rgba(57, 116, 208, 0.4) 5px 5px, rgba(57, 116, 208, 0.3) 10px 10px, rgba(57, 116, 208, 0.2) 15px 15px, rgba(57, 116, 208, 0.1) 20px 20px, rgba(57, 116, 208, 0.05) 25px 25px, rgba(57, 116, 208, 0.4) -5px -5px, rgba(57, 116, 208, 0.3) -10px -10px, rgba(57, 116, 208, 0.2) -15px -15px, rgba(57, 116, 208, 0.1) -20px -20px, rgba(240, 46, 170, 0.05) -25px -25px;
   border-radius: 1px; 
 }
 #triangle3 {
   position: absolute;
   bottom: 0;
   left: 0;
-  transform: rotate(-130deg) scale(1) translateX(22%) translateY(-50%);
+  transform: rotate(-135deg) scale(1) translateX(32%) translateY(-41%);
   width: 1150px;
   height: 950px;
   background: rgb(210,136,29);
-  background: linear-gradient(62deg, rgba(210,136,29,1) 17%, rgba(205,82,33,1) 37%, rgba(198,82,59,1) 54%, rgba(111,128,64,1) 70%, rgba(38,176,193,1) 87%);  
+  background: linear-gradient(62deg, rgba(210,136,29,1) 17%, rgba(205,82,33,1) 37%, rgba(198,82,59,1) 54%, rgba(111,128,64,1) 70%, hsl(187, 67%, 45%) 87%);  
+  box-shadow: rgba(210, 136, 29, 0.4) 5px 5px, rgba(210, 136, 29, 0.3) 10px 10px, rgba(210, 136, 29, 0.2) 15px 15px, rgba(210, 136, 29, 0.1) 20px 20px, rgba(210, 136, 29, 0.05) 25px 25px, rgba(210, 136, 29, 0.4) -5px -5px, rgba(210, 136, 29, 0.3) -10px -10px, rgba(210, 136, 29, 0.2) -15px -15px, rgba(210, 136, 29, 0.1) -20px -20px, rgba(240, 46, 170, 0.05) -25px -25px;
+  border-radius: 1px; 
+}
+#triangle4 {
+  position: absolute;
+  bottom: 0;
+  transform: rotate(-135deg) scale(1.2) translateX(-25%) translateY(34%);
+  width: 550px;
+  height: 800px;
+  filter: brightness(0.8);
+  background: rgb(85,233,222);
+  background: linear-gradient(203deg, rgba(85,233,222,1) 0%, rgba(178,25,254,1) 50%, rgba(252,69,189,1) 82%); 
   box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px, rgba(240, 46, 170, 0.4) -5px -5px, rgba(240, 46, 170, 0.3) -10px -10px, rgba(240, 46, 170, 0.2) -15px -15px, rgba(240, 46, 170, 0.1) -20px -20px, rgba(240, 46, 170, 0.05) -25px -25px;
   border-radius: 1px; 
 }
