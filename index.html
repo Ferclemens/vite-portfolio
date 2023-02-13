@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/lightning.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fer Clemens dev</title>
+    <meta name='description' content='Fernando Clemens - Web developer. Landing page to show my skills and work.'>
   </head>
   <body>
     <form name="contact" netlify netlify-honeypot="bot-field" hidden>
@@ -16,21 +17,15 @@
     <div id="root"></div>
     <div class="background--custom--top">
       <canvas id="canvas"></canvas>
-    </div>
-    <div class="background--custom--bottom">
-      <canvas id="canvas2"></canvas>
-    </div>
-    <div class="background--custom--bottom2">
-      <canvas id="canvas3"></canvas>
+      <div id="triangle3"></div>
+      <div id="triangle1"></div>
+      <div id="triangle2"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/gh/greentfrapp/pocoloco@minigl/minigl.js"></script>
     <script>
       let gradient = new Gradient();
       gradient.initGradient("#canvas");
       let gradient2 = new Gradient();
-      gradient2.initGradient("#canvas2");
-      let gradient3 = new Gradient();
-      gradient3.initGradient("#canvas3");
     </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>

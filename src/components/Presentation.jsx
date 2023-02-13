@@ -2,6 +2,16 @@ import { Box, Heading, HStack, Stack, Text, useBreakpointValue } from '@chakra-u
 import React from 'react'
 
 function Presentation() {
+
+  const dataAbout = 
+  {
+    greetingEng:'Hi!',
+    greetingSp:'Hola!',
+    PresentationEng:'I\'m a web developer',
+    PresentationSp:'Soy desarrollador web',
+    actionIng:'Let\'s in and see some of my work.',
+    actionSp:'Ven y mira algunos de mis trabajos'
+  }
   const fontSizeTitleDinamic = useBreakpointValue({base:'5xl', sm:'5xl', lg:'6xl'})
   const fontSizeTextDinamic = useBreakpointValue({base:'3xl', sm:'3xl', lg:'5xl'})
   return (
