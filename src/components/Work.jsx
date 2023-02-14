@@ -62,7 +62,7 @@ function Work() {
       ],
       github:"https://github.com/Ferclemens/Context-EcommerceApp-SkillFactory",
       deploy:"https://ecommerce-app-skill-factory.vercel.app/",
-      engDesc:"Ecommerce of football shirts with responsive design, user and stock management, shopping cart and payment simulation.",
+      engDesc:"E-commerce for football jerseys with Responsive Design, user and stock management, shopping cart and payment simulation.",
       spDesc:"Ecommerce de remeras de futbol, con diseño responsive. Cuenta con administración de stock, gestión de usuarios, carrito de compras y simulación de pago.",
     },
     {
@@ -98,7 +98,7 @@ function Work() {
       ],
       github:"https://github.com/Ferclemens/Nodejs-Mysql-restApi-practice.git",
       deploy:"https://nodejs-mysql-restapi-practice-production.up.railway.app/employees",
-      engDesc:"A simple crud to manage an employee database with some Rest API client like Postman or Thunder Client (Visual Studio). Deployed on Railway. Instructions on repository README file.",
+      engDesc:"A simple programme to manage an employee database with a Rest API client like Postman or Thunder Client (Visual Studio). Deployed on Railway. Instructions on repository README file.",
       spDesc: 'Un CRUD para administrar una base de datos de empleados. Utilizando alguna API Rest como Postman o Thunder Client de Visual Studio. Simple, Desplegada en Railway. Las instrucciones estan en el README del repositorio.'
     },
     {
@@ -139,14 +139,14 @@ function Work() {
       ],
       github:"https://github.com/Ferclemens/vite-portfolio",
       deploy:"https://ferclemens.netlify.app",
-      engDesc:"A landing page as a portfolio to show my work, skills and leave my contact information. Made using Chakra UI library.",
+      engDesc:"A landing page as a portfolio to show my work, skills and leave my contact information. Created with Chakra UI library.",
       spDesc: 'Una Landing page como portfolio de presentación. Mostrando proyectos, skills y datos de contacto. Desarrollada con la libreria de Chakra UI.'
     },
   ]
   return (
-    <VStack p={5} py={'24'} spacing={10} alignItems="center" id='Work'>
+    <VStack p={5} py={'24'} spacing={10} alignItems="center" id={language ? 'Work' : 'Trabajo'}>
       <Stack p={5} bg={'rgba(255, 255, 255, 0.6)'} borderRadius={5} boxShadow={'dark-lg'}>
-        <Heading>{language ? textData.engTitle : textData.spTitle}</Heading>
+        <Heading as={'h2'}>{language ? textData.engTitle : textData.spTitle}</Heading>
         <Text fontSize={fontSizeDinamic}>{language ? textData.engDesc : textData.spDesc}</Text>
         {workList.map((work) => {
             const {title, src, alt, tools, github, deploy, desc, toolsIcons} = work

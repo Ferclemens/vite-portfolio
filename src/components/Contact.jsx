@@ -8,7 +8,7 @@ function Contact() {
   const textData = {
     engTitle: 'Contact',
     spTitle: 'Contacto',
-    engDesc: 'Write me to organize a meeting, any suggestions or just talk.',
+    engDesc: 'Write me to set up a meeting, any suggestions or just talk.',
     spDesc: 'Escribeme para organizar una reunión, por alguna sugerencia o solo hablar.',
 
   }
@@ -33,7 +33,7 @@ function Contact() {
     <VStack id={language ? 'Contact' : 'Contacto'} py={'24'} px={'5'}>
       <VStack p={5} spacing={10} borderRadius={5} alignItems="flex-start" bg={'rgba(255, 255, 255, 0.6)'} boxShadow={'dark-lg'}>
           <Stack spacing={2} alignItems="flex-start">
-            <Heading size="xl">{language ? textData.engTitle : textData.spTitle}</Heading>
+            <Heading as={'h2'} size="xl">{language ? textData.engTitle : textData.spTitle}</Heading>
             <Text fontSize={fontSizeDinamic}>{language ? textData.engDesc : textData.spDesc} 💬</Text>
           </Stack>
           <Stack w={'full'} px={formPaddingX}>
@@ -69,7 +69,7 @@ function Contact() {
                   </FormControl>
                 </GridItem>
                 <GridItem colSpan={2}>
-                  <Button my={10} w={'full'} colorScheme={'yellow'} border={'1px'} boxShadow={'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;'} type='submit'>Send</Button>
+                  <Button my={10} w={'full'} colorScheme={'yellow'} border={'1px'} boxShadow={'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;'} type='submit'>{language ? 'Send' : 'Enviar'}</Button>
                 </GridItem>
               </SimpleGrid>
             </form>

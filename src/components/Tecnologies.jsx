@@ -8,7 +8,7 @@ function Tecnologies() {
   const textData = {
     titleEng: 'Tecnologies',
     titleSp: 'Tecnologías',
-    descEng: 'Languages libraries, frameworks and tools that I have used so far.',
+    descEng: 'Languages, libraries, frameworks and tools I have used so far.',
     descSp: 'Lenguajes, librerías, frameworks y herramientas que utilicé hasta ahora.'
   }
   const fontSizeDinamic = useBreakpointValue({base:'xl', sm:'2xl'})
@@ -102,7 +102,7 @@ function Tecnologies() {
   ]
 
   return (
-    <VStack p={5} spacing={10} alignItems="flex-start" id='Tecnologies'>
+    <VStack p={5} spacing={10} alignItems="flex-start" id={language ? 'Tecnologies' : 'Tecnologías'}>
       <Stack p={5} mt={'20'} bg={'rgba(255, 255, 255, 0.6)'} borderRadius={5} boxShadow={'dark-lg'}>
         <Heading as={'h2'}>{language ? textData.titleEng : textData.titleSp}</Heading>
         <Text fontSize={fontSizeDinamic}>{language ? textData.descEng : textData.descSp}</Text>

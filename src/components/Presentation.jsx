@@ -8,9 +8,9 @@ function Presentation() {
   {
     greetingEng:'Hi!',
     greetingSp:'Hola!',
-    PresentationEng:'I\'m a web developer',
+    PresentationEng:'I am a web developer',
     PresentationSp:'Soy desarrollador web',
-    actionEng:'Let\'s in and see some of my work.',
+    actionEng:'Let us go in and see some of my work.',
     actionSp:'Ven a ver algunos de mis trabajos.'
   }
   const fontSizeTitleDinamic = useBreakpointValue({base:'5xl', sm:'5xl', lg:'6xl'})
