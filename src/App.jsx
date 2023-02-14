@@ -7,12 +7,13 @@ import Contact from './components/Contact'
 import Footer from './components/Footer.jsx'
 import Presentation from './components/Presentation'
 import { VStack } from '@chakra-ui/react'
+import SwitchTheme from './components/SwitchTheme'
 
-function App() {
-
+function App() { 
   return (
     <VStack>
       <Navbar/>
+      <SwitchTheme/>
       <Presentation/>        
       <About/>
       <Tecnologies/>

@@ -1,8 +1,16 @@
 import { Box, Button, Flex, GridItem, Heading, HStack, Image, SimpleGrid, Stack, Text, VStack, Icon, useBreakpointValue, Link } from '@chakra-ui/react'
 import React from 'react'
 import { SiChakraui, SiHtml5, SiCss3, SiJavascript, SiGit, SiPython, SiReact, SiRedux, SiNodedotjs, SiExpress, SiMysql, SiFirebase, SiBootstrap, SiVisualstudiocode, SiDjango, SiJava, SiVite } from 'react-icons/si';
+import { useThemeContext } from '../context/ThemeContext';
 
 function Tecnologies() {
+  const {language} =useThemeContext()
+  const textData = {
+    titleEng: 'Tecnologies',
+    titleSp: 'Tecnologías',
+    descEng: 'Languages libraries, frameworks and tools that I have used so far.',
+    descSp: 'Lenguajes, librerías, frameworks y herramientas que utilicé hasta ahora.'
+  }
   const fontSizeDinamic = useBreakpointValue({base:'xl', sm:'2xl'})
   const paddingDinamic = useBreakpointValue({base:'5', sm:'10'})
   const gapDinamic = useBreakpointValue({base:'5', sm:'8'})
@@ -96,8 +104,8 @@ function Tecnologies() {
   return (
     <VStack p={5} spacing={10} alignItems="flex-start" id='Tecnologies'>
       <Stack p={5} mt={'20'} bg={'rgba(255, 255, 255, 0.6)'} borderRadius={5} boxShadow={'dark-lg'}>
-        <Heading as={'h2'}>Tecnologies</Heading>
-        <Text fontSize={fontSizeDinamic}>Languages, libraries, frameworks and tools that I use so far.</Text>
+        <Heading as={'h2'}>{language ? textData.titleEng : textData.titleSp}</Heading>
+        <Text fontSize={fontSizeDinamic}>{language ? textData.descEng : textData.descSp}</Text>
         <HStack justifyContent="center" alignItems="center" flexWrap="wrap" gap={gapDinamic} p={paddingDinamic}>
           {tecnologies.map((item) => {
             const {src, title, color, link} = item
