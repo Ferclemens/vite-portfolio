@@ -29,6 +29,7 @@ function Contact() {
   const isErrorMail = inputMail === ''
   const isErrorMessage = inputMessage === ''
 
+
   return (
     <VStack id={language ? 'Contact' : 'Contacto'} py={'24'} px={'5'}>
       <VStack p={5} spacing={10} borderRadius={5} alignItems="flex-start" bg={'rgba(255, 255, 255, 0.6)'} boxShadow={'dark-lg'}>
@@ -37,7 +38,7 @@ function Contact() {
             <Text fontSize={fontSizeDinamic}>{language ? textData.engDesc : textData.spDesc} 💬</Text>
           </Stack>
           <Stack w={'full'} px={formPaddingX}>
-            <form method='post'>
+            <form method='post' action='/successSend'>
               <input type="hidden" name="form-name" value="contact" />
               <SimpleGrid columns={2} columnGap={3} w="full" >
                 <GridItem colSpan={colSpan}>

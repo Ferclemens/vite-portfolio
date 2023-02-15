@@ -6,12 +6,16 @@ import App from './App.jsx'
 import { ChakraProvider } from '@chakra-ui/react'
 // Import Context provider
 import { ThemeContextProvider } from './context/ThemeContext.jsx'
+// Import React Router Dom
+import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ChakraProvider>
       <ThemeContextProvider>
-        <App />
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
       </ThemeContextProvider>
     </ChakraProvider>
   </React.StrictMode>,
