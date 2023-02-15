@@ -1,6 +1,6 @@
 import { Alert, AlertDescription, AlertIcon, AlertTitle, Stack } from '@chakra-ui/react'
 import React, { useEffect } from 'react'
-import { useThemeContext } from '../context/ThemeContext'
+import { useThemeContext } from '../context/ThemeContext.jsx'
 
 function NotFound404() {
     const {language} = useThemeContext()

@@ -7,11 +7,9 @@ import { ThemeContextProvider } from './context/ThemeContext.jsx'
 import SuccessSendMessage from './components/SuccessSendMessage.jsx'
 
 ReactDOM.createRoot(document.getElementById('success')).render(
-  <React.StrictMode>
     <ChakraProvider>
       <ThemeContextProvider>
         <SuccessSendMessage></SuccessSendMessage>
       </ThemeContextProvider>
     </ChakraProvider>
-  </React.StrictMode>,
 )
