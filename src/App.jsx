@@ -8,19 +8,28 @@ import Footer from './components/Footer.jsx'
 import Presentation from './components/Presentation'
 import { VStack } from '@chakra-ui/react'
 import SwitchTheme from './components/SwitchTheme'
+import { Route, Routes } from 'react-router'
+import SuccessSendMessage from './components/SuccessSendMessage'
+import NotFound404 from './components/NotFound404'
 
 function App() { 
   return (
-    <VStack>
-      <Navbar/>
-      <SwitchTheme/>
-      <Presentation/>        
-      <About/>
-      <Tecnologies/>
-      <Work/>
-      <Contact/>
-      <Footer/>
-    </VStack>
+    <Routes>
+      <Route path='/' element={
+        <VStack>
+          <Navbar/>
+          <SwitchTheme/>
+          <Presentation/>        
+          <About/>
+          <Tecnologies/>
+          <Work/>
+          <Contact/>
+          <Footer/>
+        </VStack>
+      }/>
+      <Route path='/successSend' element={<SuccessSendMessage/>}/>
+      <Route path='*' element={<NotFound404/>}/>
+    </Routes>
   )
 }
 

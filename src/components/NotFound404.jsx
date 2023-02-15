@@ -2,7 +2,7 @@ import { Alert, AlertDescription, AlertIcon, AlertTitle, Stack } from '@chakra-u
 import React, { useEffect } from 'react'
 import { useThemeContext } from '../context/ThemeContext'
 
-function SuccessSendMessage() {
+function NotFound404() {
     const {language} = useThemeContext()
     
     useEffect(() => {
@@ -27,15 +27,15 @@ function SuccessSendMessage() {
         >
             <AlertIcon boxSize='80px' mr={0} />
             <AlertTitle mt={4} mb={1} fontSize='2xl'>
-                {language ? 'submitted!' : 'Enviado!'}
+                {language ? 'Page not found!' : 'Página no encontrada!'}
             </AlertTitle>
             <AlertDescription mt={4} maxWidth='lg' fontSize='xl'>
-                {language ? 'Thanks for submitting your message. I will reply to you soon!.' 
-                    : 'Gracias por enviar tu mensaje. Te estaré contestando a la brevedad!.'}
+                {language ? 'Redirect to home page.' 
+                    : 'Redirigiendo al home.'}
             </AlertDescription>
         </Alert>
     </Stack>
   )
 }
 
-export default SuccessSendMessage
+export default NotFound404
