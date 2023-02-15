@@ -37,7 +37,7 @@ function Contact() {
             <Text fontSize={fontSizeDinamic}>{language ? textData.engDesc : textData.spDesc} 💬</Text>
           </Stack>
           <Stack w={'full'} px={formPaddingX}>
-            <form method='post' action="../src/components/SuccessSendMessage.jsx">
+            <form method='post' action="/src/components/SuccessSendMessage.jsx">
               <input type="hidden" name="form-name" value="contact" />
               <SimpleGrid columns={2} columnGap={3} w="full" >
                 <GridItem colSpan={colSpan}>
