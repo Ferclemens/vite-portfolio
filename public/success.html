@@ -3,13 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./success.svg" />
-    <link rel="stylesheet" href="../src/styles/App.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Success! :D</title>
     <meta name='description' content='Fernando Clemens - Web developer. Landing page to show my skills and work.'>
+    <style>
+      .contanier {
+        height: 100vh;
+        width: auto;
+        background-color: #0f1115;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .message-container {
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 10px;
+        font-family: 'Inter', sans-serif;
+        color: #1a202c;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+      }
+      .message-img {
+        width: 130px;
+        height: 130px;
+      }
+      #rectangle1-error {
+        position: absolute;
+        bottom: 0;
+        transform: rotate(-135deg) scale(0.6) translateX(12%) translateY(-24%);
+        width: 500px;
+        height: 750px;
+        filter: brightness(0.8);
+        background: rgb(226,199,50);
+        background: linear-gradient(110deg, rgba(226,199,50,1) 0%, rgba(103,247,167,1) 50%, rgba(57,190,208,1) 82%);   
+        box-shadow: rgba(57, 190, 208, 0.4) 5px 5px, rgba(57, 190, 208, 0.3) 10px 10px, rgba(57, 190, 208, 0.2) 15px 15px, rgba(57, 190, 208, 0.1) 20px 20px, rgba(57, 190, 208, 0.05) 25px 25px, rgba(103,247,167, 0.4) -5px -5px, rgba(103,247,167, 0.3) -10px -10px, rgba(103,247,167, 0.2) -15px -15px, rgba(103,247,167, 0.1) -20px -20px, rgba(103,247,167, 0.05) -25px -25px;
+        border-radius: 1px;
+      }
+      #rectangle2-error {
+        position: absolute;
+        bottom: 0;
+        transform: rotate(-135deg) scale(0.6) translateX(-35%) translateY(0%);
+        width: 550px;
+        height: 800px;
+        filter: brightness(0.8);
+        background: rgb(85,233,222);
+        background: linear-gradient(113deg, rgba(85,233,222,1) 0%, rgba(178,25,254,1) 50%, rgba(252,69,189,1) 82%); 
+        box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px, rgba(240, 46, 170, 0.4) -5px -5px, rgba(240, 46, 170, 0.3) -10px -10px, rgba(240, 46, 170, 0.2) -15px -15px, rgba(240, 46, 170, 0.1) -20px -20px, rgba(240, 46, 170, 0.05) -25px -25px;
+        border-radius: 1px; 
+      } 
+    </style>
   </head>
   <body>
-    <div class="error-contanier">
+    <div class="contanier">
       <div class="message-container">
         <img class="message-img" src="./success.svg" alt="success simbol">
         <h1>Sent successfully! 😀</h1>
