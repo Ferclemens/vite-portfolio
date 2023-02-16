@@ -1,4 +1,4 @@
-import { Button, HStack, Switch, Text } from '@chakra-ui/react'
+import { Button, HStack, Text } from '@chakra-ui/react'
 import React from 'react'
 import { useThemeContext } from '../context/ThemeContext'
 

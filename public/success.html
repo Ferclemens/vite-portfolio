@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/lightning.svg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Fer - Developer</title>
-        <meta name='description' content='Fernando Clemens - Web developer. Landing page to show my skills and work.'>
-    </head>
-    <body>
-        <div id="success"></div>
-        <script type="module" src="/src/success.jsx"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./success.svg" />
+    <link rel="stylesheet" href="../src/styles/App.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Success! :D</title>
+    <meta name='description' content='Fernando Clemens - Web developer. Landing page to show my skills and work.'>
+  </head>
+  <body>
+    <div class="error-contanier">
+      <div class="message-container">
+        <img class="message-img" src="./success.svg" alt="success simbol">
+        <h1>Sent successfully! 😀</h1>
+        <h2>Redirect to home page</h2>
+      </div>
+      <div id="rectangle2-error"></div>
+      <div id="rectangle1-error"></div>
+    </div>
+    <script>
+      let tID = setTimeout(function () {
+          window.location.href = "https://ferclemens.netlify.app/";
+          window.clearTimeout(tID);		// clear time out.
+      }, 5000);
+    </script>
+  </body>
 </html>

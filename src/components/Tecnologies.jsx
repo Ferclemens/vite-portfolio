@@ -1,6 +1,6 @@
-import { Box, Button, Flex, GridItem, Heading, HStack, Image, SimpleGrid, Stack, Text, VStack, Icon, useBreakpointValue, Link } from '@chakra-ui/react'
+import { Button, Heading, HStack, Stack, Text, VStack, Icon, useBreakpointValue, Link } from '@chakra-ui/react'
 import React from 'react'
-import { SiChakraui, SiHtml5, SiCss3, SiJavascript, SiGit, SiPython, SiReact, SiRedux, SiNodedotjs, SiExpress, SiMysql, SiFirebase, SiBootstrap, SiVisualstudiocode, SiDjango, SiJava, SiVite } from 'react-icons/si';
+import { SiChakraui, SiHtml5, SiCss3, SiJavascript, SiGit,  SiReact, SiRedux, SiNodedotjs, SiExpress, SiMysql, SiFirebase, SiBootstrap, SiVisualstudiocode, SiVite } from 'react-icons/si';
 import { useThemeContext } from '../context/ThemeContext';
 
 function Tecnologies() {
@@ -110,7 +110,7 @@ function Tecnologies() {
           {tecnologies.map((item) => {
             const {src, title, color, link} = item
             return (
-              <Button size="lg" leftIcon={<Icon as={src} />} key={title} colorScheme={color} boxShadow={'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;'}><Link href={link} isExternal>{title}</Link></Button>
+              <Link href={link} isExternal><Button size="lg" leftIcon={<Icon as={src} />} key={title} colorScheme={color} boxShadow={'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;'}>{title}</Button></Link>
             )
           })}
         </HStack>

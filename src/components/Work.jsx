@@ -1,7 +1,7 @@
 import React from 'react'
-import {Heading, Text, VStack, Card, CardHeader, CardBody, CardFooter, Image, Drawer, useDisclosure, Button, DrawerOverlay, DrawerContent, DrawerHeader, DrawerBody, Link, ButtonGroup, Icon, Box, Flex, Spacer, Stack, useBreakpointValue, HStack} from '@chakra-ui/react'
+import {Heading, Text, VStack, Card, CardHeader, CardBody, Button, Link, ButtonGroup, Icon, Stack, useBreakpointValue, HStack} from '@chakra-ui/react'
 import {TfiGithub, TfiWorld} from 'react-icons/tfi'
-import { SiChakraui, SiHtml5, SiCss3, SiJavascript, SiGit, SiPython, SiReact, SiRedux, SiNodedotjs, SiExpress, SiMysql, SiFirebase, SiBootstrap, SiVisualstudiocode, SiDjango, SiJava, SiVite } from 'react-icons/si';
+import { SiChakraui, SiCss3, SiJavascript, SiGit, SiReact, SiRedux, SiNodedotjs, SiExpress, SiMysql, SiFirebase, SiBootstrap, SiVite } from 'react-icons/si';
 import { useThemeContext } from '../context/ThemeContext';
 
 function Work() {

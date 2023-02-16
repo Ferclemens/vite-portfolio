@@ -1,4 +1,4 @@
-import { Box, Heading, HStack, Stack, Text, useBreakpointValue } from '@chakra-ui/react'
+import { Heading, HStack, Stack, Text, useBreakpointValue } from '@chakra-ui/react'
 import React from 'react'
 import { useThemeContext } from '../context/ThemeContext'
 
@@ -23,7 +23,7 @@ function Presentation() {
             <Heading as={'h1'} bgGradient='linear(to-l, #7928CA, #FF0080)' bgClip='text' fontSize={fontSizeTitleDinamic} border={'1px'}>{language ? textData.greetingEng : textData.greetingSp}</Heading>
             <Heading>👋</Heading>
           </HStack>
-          <Heading as={'h1'} bgGradient='linear(to-l, #7928CA, #FF0080)' bgClip='text' fontSize={fontSizeTitleDinamic}>{language ? textData.PresentationEng : textData.PresentationSp}</Heading>
+          <Heading as={'h1'} py={1} bgGradient='linear(to-l, #7928CA, #FF0080)' bgClip='text' fontSize={fontSizeTitleDinamic}>{language ? textData.PresentationEng : textData.PresentationSp}</Heading>
           <Text fontSize={fontSizeTextDinamic} as={'b'}>{language ? textData.actionEng : textData.actionSp}</Text>
         </Stack>
     </Stack>
