@@ -1,4 +1,4 @@
-import { Button, ButtonGroup, Stack, Icon, Box, Spacer, Flex, Text, HStack, Link, Image } from '@chakra-ui/react'
+import { Button, ButtonGroup, Stack, Icon, Text, Link } from '@chakra-ui/react'
 import React from 'react'
 import {BsGithub, BsLinkedin} from 'react-icons/bs'
 import {AiFillHeart} from 'react-icons/ai'
