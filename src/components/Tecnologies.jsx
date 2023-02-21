@@ -110,7 +110,7 @@ function Tecnologies() {
           {tecnologies.map((item) => {
             const {src, title, color, link} = item
             return (
-              <Link href={link} isExternal><Button size="lg" leftIcon={<Icon as={src} />} key={title} colorScheme={color} boxShadow={'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;'}>{title}</Button></Link>
+              <Link href={link} isExternal textDecoration={'none'} key={link}><Button size="lg" leftIcon={<Icon as={src} />} key={title} colorScheme={color} boxShadow={'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;'}>{title}</Button></Link>
             )
           })}
         </HStack>

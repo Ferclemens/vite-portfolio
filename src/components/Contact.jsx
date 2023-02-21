@@ -1,4 +1,4 @@
-import { Button, FormControl, FormLabel, GridItem, Heading, Input, SimpleGrid, Text, Textarea, useBreakpointValue, Stack, useDisclosure, Alert, AlertIcon, AlertTitle, AlertDescription, FormErrorMessage, FormHelperText, VStack } from '@chakra-ui/react'
+import { Button, FormControl, FormLabel, GridItem, Heading, Input, SimpleGrid, Text, Textarea, useBreakpointValue, Stack, FormErrorMessage, VStack } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import { useThemeContext } from '../context/ThemeContext'
 
@@ -42,7 +42,7 @@ function Contact() {
               <input type="hidden" name="form-name" value="contact" />
               <SimpleGrid columns={2} columnGap={3} w="full" >
                 <GridItem colSpan={colSpan}>
-                  <FormControl isRequired={'please complete'} isInvalid={isErrorName}>
+                  <FormControl isRequired isInvalid={isErrorName}>
                     <FormLabel>{language ? 'Name' : 'Nombre'}</FormLabel>
                     <Input name='name' type='text' size={'lg'} bg={'teal.300'} border={'1px'} onChange={handleChangeName}></Input>
                     {isErrorName && <FormErrorMessage>{language ? 'Please enter your name.' : 'Por favor ingresa un nombre.'}</FormErrorMessage>}
