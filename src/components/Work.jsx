@@ -165,7 +165,7 @@ function Work() {
                           //no entiendo porque el error de key prop, si tienen id :/
                           return (
                             <HStack key={id}>
-                              <Icon as={icon} key={id}></Icon>
+                              <Icon as={icon}></Icon>
                               <Text>{name}</Text>
                             </HStack>
                           )
