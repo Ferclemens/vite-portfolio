@@ -16,7 +16,7 @@ function Presentation() {
   }
   const fontSizeTitleDinamic = useBreakpointValue({base:'5xl', sm:'5xl', lg:'6xl'})
   const fontSizeTextDinamic = useBreakpointValue({base:'3xl', sm:'3xl', lg:'5xl'})
-  const marginTopDinamic = useBreakpointValue({base:'48', md:'20', lg:'20'})
+  const marginTopDinamic = useBreakpointValue({base:'20', md:'20', lg:'20'})
   return (
     <ScaleFade in={true}>
       <Stack px={5} w={'90vw'} h={'90vh'} id={language ? 'Up' : 'Inicio'}>
