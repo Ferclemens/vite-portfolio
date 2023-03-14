@@ -17,7 +17,7 @@
   position: absolute;
   width: 100%;
   height: 55%;
-  transform: rotate(-44deg) scale(3) translateY(-54%) translateX(30%);
+  transform: rotate(-40deg) scale(3) translateY(-54%) translateX(30%);
 }
 
 #rectangle1-bottom {

@@ -20,7 +20,7 @@ function About() {
   const marginXDinamic = useBreakpointValue({base:'5', sm:'22', lg:'52'})
   return (
     <VStack p={5} alignItems="flex-start" id={language ? 'About' : 'Acerca de'}>
-      <Stack mb={'32'} mx={marginXDinamic} p={5} mt={marginTopDinamic} bg={'rgba(255, 255, 255, 0.6)'} borderRadius={5} boxShadow={'dark-lg'}>
+      <Stack mb={'22'} mx={marginXDinamic} p={5} mt={marginTopDinamic} bg={'rgba(255, 255, 255, 0.6)'} borderRadius={5} boxShadow={'dark-lg'}>
         <Heading as={'h2'}>{language ? textData.engTitle : textData.spTitle}</Heading>
         <Text fontSize={fontSizeDinamic} lineHeight={lineHeightDinamic}>{language ? textData.engAbout : textData.spaAbout} 💻 💪</Text>
       </Stack>

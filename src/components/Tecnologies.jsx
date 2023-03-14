@@ -102,8 +102,8 @@ function Tecnologies() {
   ]
 
   return (
-    <VStack p={5} spacing={10} alignItems="flex-start" id={language ? 'Tecnologies' : 'Tecnologías'}>
-      <Stack p={5} mt={'20'} bg={'rgba(255, 255, 255, 0.6)'} borderRadius={5} boxShadow={'dark-lg'}>
+    <VStack p={5} alignItems="flex-start" id={language ? 'Tecnologies' : 'Tecnologías'}>
+      <Stack p={5} my={'24'} bg={'rgba(255, 255, 255, 0.6)'} borderRadius={5} boxShadow={'dark-lg'}>
         <Heading as={'h2'}>{language ? textData.titleEng : textData.titleSp}</Heading>
         <Text fontSize={fontSizeDinamic}>{language ? textData.descEng : textData.descSp}</Text>
         <HStack justifyContent="center" alignItems="center" flexWrap="wrap" gap={gapDinamic} p={paddingDinamic}>
