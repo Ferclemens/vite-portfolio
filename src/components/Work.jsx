@@ -1,7 +1,7 @@
 import React from 'react'
 import {Heading, Text, VStack, Card, CardHeader, CardBody, Button, Link, ButtonGroup, Icon, Stack, useBreakpointValue, HStack} from '@chakra-ui/react'
 import {TfiGithub, TfiWorld} from 'react-icons/tfi'
-import { SiChakraui, SiCss3, SiJavascript, SiGit, SiReact, SiRedux, SiNodedotjs, SiExpress, SiMysql, SiFirebase, SiBootstrap, SiVite } from 'react-icons/si';
+import { SiChakraui, SiCss3, SiJavascript, SiGit, SiReact, SiRedux, SiFirebase, SiBootstrap, SiVite } from 'react-icons/si';
 import { useThemeContext } from '../context/ThemeContext';
 
 function Work() {
@@ -66,10 +66,10 @@ function Work() {
       spDesc:"Ecommerce de remeras de futbol, con diseño responsive. Cuenta con administración de stock, gestión de usuarios, carrito de compras y simulación de pago.",
     },
     {
-      engTitle:"CRUD - Backend Node.js",
-      spTitle:"CRUD - Backend Node.js",
+      engTitle:"Tables charts app",
+      spTitle:"App de tablas y gráficos",
       src:'',
-      alt:"backend crud app",
+      alt:"render tables and charts app",
       toolsIcons:[{
         id: 9,
         name: 'Javascript',
@@ -77,13 +77,13 @@ function Work() {
       },
       {
         id: 10,
-        name: 'Node.js',
-          icon: SiNodedotjs
-        },
-        {
-          id: 11,
-          name: 'Express',
-          icon: SiExpress
+        name: 'React',
+        icon: SiReact
+      },
+      {
+        id: 11,
+        name: 'Vite',
+        icon: SiVite
         },
         {
           id: 12,
@@ -92,14 +92,14 @@ function Work() {
         },
         {
           id: 13,
-          name: 'MySQL',
-          icon: SiMysql
-        }
+          name: 'Chakra UI',
+          icon: SiChakraui
+        },
       ],
-      github:"https://github.com/Ferclemens/Nodejs-Mysql-restApi-practice.git",
-      deploy:"https://nodejs-mysql-restapi-practice-production.up.railway.app/employees",
-      engDesc:"A simple programme to manage an employee database with a Rest API client like Postman or Thunder Client (Visual Studio). Deployed on Railway. Instructions on repository README file.",
-      spDesc: 'Un CRUD para administrar una base de datos de empleados. Utilizando alguna API Rest como Postman o Thunder Client de Visual Studio. Simple, Desplegada en Railway. Las instrucciones estan en el README del repositorio.'
+      github:"https://github.com/Ferclemens/tables-and-charts.git",
+      deploy:"https://tables-and-charts-app.vercel.app/",
+      engDesc:"An app to load an xlsx file of sales and display graphical information on that data.",
+      spDesc: 'Una aplicación para cargar un archivo xlsx de ventas y mostrar información gráfica sobre esos datos.'
     },
     {
       engTitle:"This landing page!",
@@ -133,7 +133,7 @@ function Work() {
         },
         {
           id: 19,
-          name: 'Chakra',
+          name: 'Chakra UI',
           icon: SiChakraui
         },
       ],
