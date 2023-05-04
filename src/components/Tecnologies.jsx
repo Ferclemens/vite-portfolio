@@ -1,6 +1,6 @@
 import { Button, Heading, HStack, Stack, Text, VStack, Icon, useBreakpointValue, Link } from '@chakra-ui/react'
 import React from 'react'
-import { SiChakraui, SiHtml5, SiCss3, SiJavascript, SiGit,  SiReact, SiRedux, SiNodedotjs, SiExpress, SiMysql, SiFirebase, SiBootstrap, SiVisualstudiocode, SiVite } from 'react-icons/si';
+import { SiChakraui, SiHtml5, SiCss3, SiJavascript, SiGit,  SiReact, SiRedux, SiNodedotjs, SiExpress, SiMysql, SiFirebase, SiBootstrap, SiVisualstudiocode, SiVite, SiPython } from 'react-icons/si';
 import { useThemeContext } from '../context/ThemeContext';
 
 function Tecnologies() {
@@ -40,23 +40,17 @@ function Tecnologies() {
       link:'https://git-scm.com/'
     },
     {
-      src: SiVisualstudiocode,
-      title:'Visual Studio',
-      color:'twitter',
-      link:'https://code.visualstudio.com/'
-    },
-    {
       src: SiReact,
       title:'React',
       color:'facebook',
       link:'https://beta.es.reactjs.org/'
     },
-    {
+    /* {
       src: SiRedux,
       title:'Redux',
       color:'purple',
       link:'https://es.redux.js.org/'
-    },
+    }, */
     {
       src: SiVite,
       title:'Vite',
@@ -88,11 +82,17 @@ function Tecnologies() {
       link:'https://firebase.google.com/?hl=es'
     },
     {
+      src: SiPython,
+      title:'Python',
+      color:'green',
+      link:'https://www.python.org/doc/'
+    },
+    /* {
       src: SiBootstrap,
       title:'Bootstrap',
       color:'purple',
       link:'https://getbootstrap.com/'
-    },
+    }, */
     {
       src: SiChakraui,
       title:'Chakra',

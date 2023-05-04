@@ -10,8 +10,8 @@ function About() {
     {
       engTitle: 'About',
       spTitle: 'Acerca de mi',
-      engAbout:'My name is Fernando, I am a front-end web developer. Currently doing projects with backend tools to manage sql and NoSql databases. Curious, empathetic and proactive. I have experience in group work, project management, repositories and am eager to learn. Looking for my first job in the technology sector.',
-      spaAbout:'Mi nombre es Fernando, soy desarrollador web front-end. Actualmente realizando proyectos con herramientas back-end para el manejo de bases de datos Sql y NoSql. Curioso, empático y proactivo. Con experiencia de trabajo en grupos, gestión de proyectos, repositorios y muchas ganas de aprender. En busca de mi primer empleo en el sector tecnológico.'
+      engAbout:'My name is Fernando, I am a front-end web developer. Currently internalizing in quality assurance and data analysis. Curious, empathetic and proactive. I have experience in group work, project management, repositories and am eager to learn. Looking for my first job in the technology sector.',
+      spaAbout:'Mi nombre es Fernando, soy desarrollador web front-end. Actualmente ampliando conocimientos sobre testing y análisis de datos. Curioso, empático y proactivo. Con experiencia de trabajo en grupos, gestión de proyectos, repositorios y muchas ganas de aprender. En busca de mi primer empleo en el sector tecnológico.'
     }
 
   const fontSizeDinamic = useBreakpointValue({base:'xl', sm:'2xl', lg:'3xl'})
