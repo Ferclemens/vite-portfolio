@@ -15,10 +15,10 @@ function Work() {
   }
   const workList = [
     {
-      engTitle:"Ecommerce App",
-      spTitle:"Ecommerce App",
+      engTitle:"Ecommerce app",
+      spTitle:"Ecommerce app",
       src:'',
-      alt:"Ecommerce App",
+      alt:"Ecommerce app",
       toolsIcons:[{
         id: 1,
         name: 'Javascript',
@@ -102,9 +102,45 @@ function Work() {
       spDesc: 'Una aplicación para cargar un archivo xlsx de ventas y mostrar información gráfica sobre esos datos.'
     },
     {
+      engTitle:"Age calculator app",
+      spTitle: 'App para calcular la edad',
+      src:'',
+      alt:"Age calculator app",
+      toolsIcons:[{
+        id: 14,
+        name: 'Javascript',
+        icon: SiJavascript
+      },
+      {
+        id: 15,
+        name: 'React',
+        icon: SiReact
+      },
+      {
+        id: 16,
+        name: 'CSS',
+          icon: SiCss3
+        },
+        {
+          id: 17,
+          name: 'Vite',
+          icon: SiVite
+        },
+        {
+          id: 18,
+          name: 'Git',
+          icon: SiGit
+        }, 
+      ],
+      github:"https://github.com/Ferclemens/age-calculator-app",
+      deploy:"https://your-time-in-earth.netlify.app/",
+      engDesc:"A Front End Mentor Challenge about an app where you enter your date of birth and it shows your age. (https://www.frontendmentor.io/)",
+      spDesc: 'Una app donde ingresas tu fecha de nacimiento y muestra tu edad. Es un desafío de Front End Mentor. (https://www.frontendmentor.io/)'
+    },
+    {
       engTitle:"This landing page!",
       spTitle: 'Esta landing page!',
-      src:"https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+      src:'',
       alt:"Landing page",
       toolsIcons:[{
         id: 14,
@@ -135,7 +171,7 @@ function Work() {
           id: 19,
           name: 'Chakra UI',
           icon: SiChakraui
-        },
+        }, 
       ],
       github:"https://github.com/Ferclemens/vite-portfolio",
       deploy:"https://ferclemens.netlify.app",
