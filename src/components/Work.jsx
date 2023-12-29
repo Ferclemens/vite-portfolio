@@ -10,175 +10,9 @@ function Work() {
   const textData = {
     engTitle: 'Work',
     spTitle: 'Trabajos',
-    engDesc: 'Some projects I have worked on.',
-    spDesc: 'Algunos proyectos en los que colabore.'
+    engDesc: 'Fulfilled projects.',
+    spDesc: 'Proyectos realizados.'
   }
-  const workList = [
-    {
-      engTitle:"Ecommerce app",
-      spTitle:"Ecommerce app",
-      src:'',
-      alt:"Ecommerce app",
-      toolsIcons:[{
-        id: 1,
-        name: 'Javascript',
-        icon: SiJavascript
-      },
-      {
-        id: 2,
-        name: 'React',
-        icon: SiReact
-        },
-        {
-          id: 3,
-          name: 'Firebase',
-          icon: SiFirebase
-        },
-        {
-          id: 4,
-          name: 'Redux',
-          icon: SiRedux
-        },
-        {
-          id: 5,
-          name: 'CSS',
-          icon: SiCss3
-        },
-        {
-          id: 6,
-          name: 'Bootstrap 5',
-          icon: SiBootstrap
-        },
-        {
-          id: 7,
-          name: 'Vite',
-          icon: SiVite
-        },
-        {
-          id: 8,
-          name: 'Git',
-          icon: SiGit
-        },
-      ],
-      github:"https://github.com/Ferclemens/Context-EcommerceApp-SkillFactory",
-      deploy:"https://ecommerce-app-skill-factory.vercel.app/",
-      engDesc:"E-commerce for football jerseys with Responsive Design, user and stock management, shopping cart and payment simulation.",
-      spDesc:"Ecommerce de remeras de futbol, con diseño responsive. Cuenta con administración de stock, gestión de usuarios, carrito de compras y simulación de pago.",
-    },
-    {
-      engTitle:"Tables charts app",
-      spTitle:"App de tablas y gráficos",
-      src:'',
-      alt:"render tables and charts app",
-      toolsIcons:[{
-        id: 9,
-        name: 'Javascript',
-        icon: SiJavascript
-      },
-      {
-        id: 10,
-        name: 'React',
-        icon: SiReact
-      },
-      {
-        id: 11,
-        name: 'Vite',
-        icon: SiVite
-        },
-        {
-          id: 12,
-          name: 'Git',
-          icon: SiGit
-        },
-        {
-          id: 13,
-          name: 'Chakra UI',
-          icon: SiChakraui
-        },
-      ],
-      github:"https://github.com/Ferclemens/tables-and-charts.git",
-      deploy:"https://tables-and-charts-app.vercel.app/",
-      engDesc:"An app to load an xlsx file of sales and display graphical information on that data.",
-      spDesc: 'Una aplicación para cargar un archivo xlsx de ventas y mostrar información gráfica sobre esos datos.'
-    },
-    {
-      engTitle:"Age calculator app",
-      spTitle: 'App para calcular la edad',
-      src:'',
-      alt:"Age calculator app",
-      toolsIcons:[{
-        id: 14,
-        name: 'Javascript',
-        icon: SiJavascript
-      },
-      {
-        id: 15,
-        name: 'React',
-        icon: SiReact
-      },
-      {
-        id: 16,
-        name: 'CSS',
-          icon: SiCss3
-        },
-        {
-          id: 17,
-          name: 'Vite',
-          icon: SiVite
-        },
-        {
-          id: 18,
-          name: 'Git',
-          icon: SiGit
-        }, 
-      ],
-      github:"https://github.com/Ferclemens/age-calculator-app",
-      deploy:"https://your-time-in-earth.netlify.app/",
-      engDesc:"A Front End Mentor Challenge about an app where you enter your date of birth and it shows your age. (https://www.frontendmentor.io/)",
-      spDesc: 'Una app donde ingresas tu fecha de nacimiento y muestra tu edad. Es un desafío de Front End Mentor. (https://www.frontendmentor.io/)'
-    },
-    {
-      engTitle:"This landing page!",
-      spTitle: 'Esta landing page!',
-      src:'',
-      alt:"Landing page",
-      toolsIcons:[{
-        id: 14,
-        name: 'Javascript',
-        icon: SiJavascript
-      },
-      {
-        id: 15,
-        name: 'React',
-        icon: SiReact
-      },
-      {
-        id: 16,
-        name: 'CSS',
-          icon: SiCss3
-        },
-        {
-          id: 17,
-          name: 'Vite',
-          icon: SiVite
-        },
-        {
-          id: 18,
-          name: 'Git',
-          icon: SiGit
-        },
-        {
-          id: 19,
-          name: 'Chakra UI',
-          icon: SiChakraui
-        }, 
-      ],
-      github:"https://github.com/Ferclemens/vite-portfolio",
-      deploy:"https://ferclemens.netlify.app",
-      engDesc:"A landing page as a portfolio to show my work, skills and leave my contact information. Created with Chakra UI library.",
-      spDesc: 'Una Landing page como portfolio de presentación. Mostrando proyectos, skills y datos de contacto. Desarrollada con la libreria de Chakra UI.'
-    },
-  ]
   return (
     <VStack p={5} py={'24'} spacing={10} alignItems="center" id={language ? 'Work' : 'Trabajo'}>
       <Stack p={5} bg={'rgba(255, 255, 255, 0.6)'} borderRadius={5} boxShadow={'dark-lg'}>
@@ -226,3 +60,170 @@ function Work() {
 }
 
 export default Work
+
+const workList = [
+  {
+    engTitle:"Ecommerce app",
+    spTitle:"Ecommerce app",
+    src:'',
+    alt:"Ecommerce app",
+    toolsIcons:[{
+      id: 1,
+      name: 'Javascript',
+      icon: SiJavascript
+    },
+    {
+      id: 2,
+      name: 'React',
+      icon: SiReact
+      },
+      {
+        id: 3,
+        name: 'Firebase',
+        icon: SiFirebase
+      },
+      {
+        id: 4,
+        name: 'Redux',
+        icon: SiRedux
+      },
+      {
+        id: 5,
+        name: 'CSS',
+        icon: SiCss3
+      },
+      {
+        id: 6,
+        name: 'Bootstrap 5',
+        icon: SiBootstrap
+      },
+      {
+        id: 7,
+        name: 'Vite',
+        icon: SiVite
+      },
+      {
+        id: 8,
+        name: 'Git',
+        icon: SiGit
+      },
+    ],
+    github:"https://github.com/Ferclemens/Context-EcommerceApp-SkillFactory",
+    deploy:"https://ecommerce-app-skill-factory.vercel.app/",
+    engDesc:"E-commerce for football jerseys with Responsive Design, user and stock management, shopping cart and payment simulation.",
+    spDesc:"Ecommerce de remeras de futbol, con diseño responsive. Cuenta con administración de stock, gestión de usuarios, carrito de compras y simulación de pago.",
+  },
+  {
+    engTitle:"Tables charts app",
+    spTitle:"App de tablas y gráficos",
+    src:'',
+    alt:"render tables and charts app",
+    toolsIcons:[{
+      id: 9,
+      name: 'Javascript',
+      icon: SiJavascript
+    },
+    {
+      id: 10,
+      name: 'React',
+      icon: SiReact
+    },
+    {
+      id: 11,
+      name: 'Vite',
+      icon: SiVite
+      },
+      {
+        id: 12,
+        name: 'Git',
+        icon: SiGit
+      },
+      {
+        id: 13,
+        name: 'Chakra UI',
+        icon: SiChakraui
+      },
+    ],
+    github:"https://github.com/Ferclemens/tables-and-charts.git",
+    deploy:"https://tables-and-charts-app.vercel.app/",
+    engDesc:"An app to load an xlsx file of sales and display graphical information on that data.",
+    spDesc: 'Una aplicación para cargar un archivo xlsx de ventas y mostrar información gráfica sobre esos datos.'
+  },
+  {
+    engTitle:"Age calculator app",
+    spTitle: 'App para calcular la edad',
+    src:'',
+    alt:"Age calculator app",
+    toolsIcons:[{
+      id: 14,
+      name: 'Javascript',
+      icon: SiJavascript
+    },
+    {
+      id: 15,
+      name: 'React',
+      icon: SiReact
+    },
+    {
+      id: 16,
+      name: 'CSS',
+        icon: SiCss3
+      },
+      {
+        id: 17,
+        name: 'Vite',
+        icon: SiVite
+      },
+      {
+        id: 18,
+        name: 'Git',
+        icon: SiGit
+      }, 
+    ],
+    github:"https://github.com/Ferclemens/age-calculator-app",
+    deploy:"https://your-time-in-earth.netlify.app/",
+    engDesc:"A Front End Mentor Challenge about an app where you enter your date of birth and it shows your age. (https://www.frontendmentor.io/)",
+    spDesc: 'Una app donde ingresas tu fecha de nacimiento y muestra tu edad. Es un desafío de Front End Mentor. (https://www.frontendmentor.io/)'
+  },
+  {
+    engTitle:"This landing page!",
+    spTitle: 'Esta landing page!',
+    src:'',
+    alt:"Landing page",
+    toolsIcons:[{
+      id: 14,
+      name: 'Javascript',
+      icon: SiJavascript
+    },
+    {
+      id: 15,
+      name: 'React',
+      icon: SiReact
+    },
+    {
+      id: 16,
+      name: 'CSS',
+        icon: SiCss3
+      },
+      {
+        id: 17,
+        name: 'Vite',
+        icon: SiVite
+      },
+      {
+        id: 18,
+        name: 'Git',
+        icon: SiGit
+      },
+      {
+        id: 19,
+        name: 'Chakra UI',
+        icon: SiChakraui
+      }, 
+    ],
+    github:"https://github.com/Ferclemens/vite-portfolio",
+    deploy:"https://ferclemens.netlify.app",
+    engDesc:"A landing page as a portfolio to show my work, skills and leave my contact information. Created with Chakra UI library.",
+    spDesc: 'Una Landing page como portfolio de presentación. Mostrando proyectos, skills y datos de contacto. Desarrollada con la libreria de Chakra UI.'
+  },
+]
